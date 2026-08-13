@@ -47,3 +47,17 @@ Homepage upgraded with premium product storytelling, ministry outcome section, e
 - Uses the locked Ministry First / Technology Should Serve the Mission visual.
 - Adds partial-availability notes to Digital Evangelism Engine, Discipleship Journeys and Ministry Automation.
 - Clarifies Advanced Ministry Analytics as advanced-only capabilities.
+
+## V11 approved homepage + demo updates
+- Final locked homepage hero sizing/composition refined for desktop balance.
+- Propel Apps and Propel Websites cards now use the final approved Champion Life visual direction.
+- Founding Momentum section tightened and visually upgraded without changing its approved message.
+- `/demo/` now uses a full personalized ministry intake form powered by Netlify Forms, with conditional church-size logic, role selection, product-interest combinations, spam protection, and a dedicated thank-you page.
+- Form submissions are stored in Netlify as `propel-demo-request`. In Netlify, enable a **Form submission notification** for this form to send new submissions to `info@kingdompropel.com` so every request is delivered to the Propel inbox.
+
+## V12 approved sync + personalized demo form
+- Preserves the final locked light homepage hero composition with the transparent Propel dashboard + Calvary mobile visual enlarged and positioned to the left for proper balance.
+- Preserves the final approved Champion Life app and custom-website visuals in the product cards, with `object-fit: contain` so devices/screens are never clipped.
+- Preserves the approved Ministry First / Technology Should Serve the Mission visual and Founding Momentum refinements.
+- `/demo/` is now a full Netlify Forms intake experience collecting name, email, phone, organization, organization type, role, church attendance (conditional), product interests/combinations, website and notes.
+- Netlify captures submissions under the form name `propel-demo-request`. After deployment, in **Netlify → Forms → Form notifications**, add an email notification for `propel-demo-request` to **info@kingdompropel.com**. This notification destination is configured in Netlify, not hard-coded in HTML.
