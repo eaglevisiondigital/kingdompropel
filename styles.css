@@ -373,3 +373,10 @@ header .brand img{width:205px;max-height:52px;object-fit:contain;object-position
   .propel-cap-card{min-height:190px}
   .propel-capabilities-head h2{font-size:33px}
 }
+
+/* LOCKED HOMEPAGE HERO PRODUCT VISUAL — approved Aug 13, 2026 */
+.hero-approved-visual{position:relative;display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-approved-visual img{display:block;width:min(100%,880px);height:auto;aspect-ratio:1524/1032;object-fit:contain;filter:drop-shadow(0 30px 50px rgba(15,23,42,.16));transform:scale(1.035);transform-origin:center center}
+@media (max-width:1180px){.hero-approved-visual img{width:min(100%,820px);transform:none}}
+@media (max-width:980px){.hero-approved-visual{margin-top:18px}.hero-approved-visual img{width:min(100%,900px)}}
+@media (max-width:640px){.hero-approved-visual{margin-top:6px}.hero-approved-visual img{width:112%;max-width:none;margin-left:-6%}}
