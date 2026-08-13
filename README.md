@@ -61,3 +61,11 @@ Homepage upgraded with premium product storytelling, ministry outcome section, e
 - Preserves the approved Ministry First / Technology Should Serve the Mission visual and Founding Momentum refinements.
 - `/demo/` is now a full Netlify Forms intake experience collecting name, email, phone, organization, organization type, role, church attendance (conditional), product interests/combinations, website and notes.
 - Netlify captures submissions under the form name `propel-demo-request`. After deployment, in **Netlify → Forms → Form notifications**, add an email notification for `propel-demo-request` to **info@kingdompropel.com**. This notification destination is configured in Netlify, not hard-coded in HTML.
+
+## V15 approved homepage sync
+- Homepage hero composition locked to approved Aug. 13 layout: enlarged product visual, aligned beneath the dark header, full-width bottom action row, and all capability pills on a single desktop line.
+- Partner Platform flagship section rebuilt as a premium add-on showcase with Partner Command Center + partner-facing mobile experience.
+- Partner Platform now highlights engagement tools, courses/training, donor notifications and messaging, partner PDFs/books/downloads, prayer connection, projects/campaigns, analytics/reporting, receipts/statements, and automation.
+- Added Volunteer Scheduling and Needs & Sign-Ups to the main capability grid.
+- Added /needs-signups/ landing page.
+- Added a restrained optional Professional Voiceover & Media Support callout; this is positioned as a professional service, not a core Propel software feature.
