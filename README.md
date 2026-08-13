@@ -40,3 +40,10 @@ Added Organization/WebSite structured data, public Propel email/address, Open Gr
 
 ## V2 Homepage Refinement
 Homepage upgraded with premium product storytelling, ministry outcome section, early-adopter positioning, improved visual hierarchy, and stronger conversion flow.
+
+## V9 approved-section sync
+- Uses the locked transparent Propel hero image.
+- Corrected premium product-card framing for Apps, Websites and Ministry Hub.
+- Uses the locked Ministry First / Technology Should Serve the Mission visual.
+- Adds partial-availability notes to Digital Evangelism Engine, Discipleship Journeys and Ministry Automation.
+- Clarifies Advanced Ministry Analytics as advanced-only capabilities.
