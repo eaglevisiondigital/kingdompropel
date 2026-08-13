@@ -420,3 +420,30 @@ header .brand img{width:205px;max-height:52px;object-fit:contain;object-position
 .partial-note span{color:#26d765;font-weight:950}
 @media(max-width:980px){.experience-media{height:320px}.ministry-approved-visual img{max-width:760px}}
 @media(max-width:640px){.experience-media{height:240px;padding:8px}.ministry-approved-visual img{border-radius:22px}}
+
+/* V10 approved sizing refinements — Aug 13, 2026 */
+@media (min-width:1101px){
+  .hero-approved-visual{
+    align-self:start;
+    overflow:visible;
+    margin-top:-6px;
+  }
+  .hero-approved-visual img{
+    width:124%;
+    max-width:none;
+    transform:translate(-3%,-30px);
+    transform-origin:center center;
+  }
+  #story .pastor{
+    grid-template-columns:1.08fr .92fr;
+    gap:48px;
+  }
+  .ministry-approved-visual{
+    overflow:visible;
+  }
+  .ministry-approved-visual img{
+    width:113%;
+    max-width:none;
+    transform:translateX(-4%);
+  }
+}
