@@ -638,3 +638,47 @@ header .brand img{width:205px;max-height:52px;object-fit:contain;object-position
 @media (min-width:1101px){
   .hero-approved-visual img{transform:translate(-1.5%,-18px)}
 }
+
+/* V13 — approved light demo intake panel */
+.demo-form{
+  border-color:#dbe6df;
+  background:linear-gradient(180deg,#ffffff 0%,#f8fbf9 100%);
+  color:#0b1320;
+  box-shadow:0 34px 90px rgba(3,20,12,.18),inset 0 1px 0 #fff;
+}
+.form-head{border-bottom-color:#dfe8e2}
+.form-head>span{color:#13813d}
+.form-head strong{color:#0b1320}
+.form-head p{color:#657583}
+.demo-form label>span,.interest-fieldset legend{color:#182430}
+.demo-form input[type=text],.demo-form input[type=email],.demo-form input[type=tel],.demo-form input[type=url],.demo-form select,.demo-form textarea{
+  border-color:#d4dfd8;
+  background:#fff;
+  color:#0b1320;
+  box-shadow:0 1px 2px rgba(15,23,42,.025);
+}
+.demo-form input::placeholder,.demo-form textarea::placeholder{color:#8b99a4}
+.demo-form input:focus,.demo-form select:focus,.demo-form textarea:focus{
+  border-color:#25c65e;
+  box-shadow:0 0 0 3px rgba(34,197,94,.11);
+  background:#fff;
+}
+.interest-fieldset>p{color:#687986}
+.interest-grid label{
+  border-color:#d9e3dd;
+  background:#fff;
+  box-shadow:0 5px 18px rgba(15,23,42,.025);
+}
+.interest-grid label:hover{border-color:#8dd9a7;background:#f4fbf6}
+.interest-grid label:has(input:checked){
+  border-color:#34c96a;
+  background:linear-gradient(180deg,#effbf3,#e7f8ed);
+  box-shadow:0 0 0 1px rgba(34,197,94,.06),0 12px 28px rgba(27,116,57,.08);
+}
+.interest-grid label:has(input:checked) b{color:#087d35}
+.interest-grid b{color:#15222e}
+.interest-grid small{color:#687986}
+.consent{color:#536573}
+.form-footnote{color:#667784}
+.form-footnote strong{color:#087d35}
+.form-error{color:#087d35}
