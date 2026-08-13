@@ -950,3 +950,79 @@ header .brand img{width:205px;max-height:52px;object-fit:contain;object-position
 /* V20 — premium Apps + Websites expansion */
 .product-hero{padding:110px 0 92px;background:radial-gradient(circle at 50% 0,rgba(31,203,101,.11),transparent 36%),#f8fbf9}.product-hero-inner{max-width:1040px;text-align:center}.product-hero h1{font-size:clamp(3.4rem,6vw,6.4rem);line-height:.94;letter-spacing:-.065em;margin:22px auto 26px;max-width:1000px;color:#07111f}.product-hero h1 span,.section-head h2 span{color:#20b861}.product-hero p{font-size:1.22rem;line-height:1.7;max-width:800px;margin:0 auto;color:#52657a}.product-hero .hero-actions{justify-content:center;margin-top:34px}.showcase-section{padding:92px 0 104px}.showcase-section .section-head{max-width:900px;margin:0 auto 52px}.showcase-section .section-head h2,.capabilities .section-head h2{font-size:clamp(2.5rem,4vw,4.4rem);line-height:1;letter-spacing:-.045em}.app-showcase-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:end}.app-showcase-grid figure{margin:0;padding:14px 14px 18px;border:1px solid #dce8e1;border-radius:26px;background:#fff;box-shadow:0 24px 55px rgba(7,17,31,.08);overflow:hidden}.app-showcase-grid img{width:100%;height:560px;object-fit:cover;object-position:center;border-radius:17px;display:block}.app-showcase-grid figcaption{text-align:center;font-weight:800;padding-top:15px;color:#132033}.website-showcase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}.website-showcase-grid figure{margin:0;background:#fff;border:1px solid #dce8e1;border-radius:24px;padding:12px;box-shadow:0 24px 60px rgba(7,17,31,.08);overflow:hidden}.website-showcase-grid figure.wide{grid-column:1/-1}.website-showcase-grid img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:15px;display:block}.website-showcase-grid figcaption{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:18px 10px 7px;color:#52657a}.website-showcase-grid figcaption b{font-size:1.08rem;color:#0a1525}.capabilities{padding:104px 0;background:#061521;color:#fff}.capabilities .section-head{max-width:900px;margin:0 auto 54px}.capabilities .section-head h2{color:#fff}.capabilities .section-head p{color:#a9bac7}.capabilities .tag{color:#55e997;border-color:rgba(85,233,151,.3);background:rgba(33,200,105,.08)}.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.cap-card{position:relative;min-height:220px;padding:26px 24px;border:1px solid rgba(92,225,151,.18);border-radius:20px;background:linear-gradient(145deg,rgba(16,49,67,.96),rgba(7,29,43,.96));box-shadow:inset 0 1px rgba(255,255,255,.03);transition:.25s ease}.cap-card:hover{transform:translateY(-4px);border-color:rgba(72,230,143,.5);box-shadow:0 18px 44px rgba(0,0,0,.2)}.cap-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:rgba(30,211,110,.12);color:#43e58d;font-size:1.1rem;margin-bottom:20px}.cap-card h3{font-size:1.08rem;margin:0 0 10px;color:#fff}.cap-card p{font-size:.91rem;line-height:1.55;margin:0;color:#b8c7d2}.cap-card em{display:inline-block;margin-top:16px;font-style:normal;font-size:.68rem;font-weight:900;letter-spacing:.12em;color:#4eea95;border:1px solid rgba(78,234,149,.3);border-radius:999px;padding:6px 9px}.addon-callout{margin-top:38px;padding:34px 38px;display:flex;align-items:center;justify-content:space-between;gap:30px;border:1px solid rgba(54,224,132,.36);border-radius:24px;background:linear-gradient(100deg,rgba(20,96,65,.32),rgba(6,25,36,.8))}.addon-callout>div{max-width:760px}.addon-callout span{font-size:.72rem;letter-spacing:.15em;font-weight:900;color:#54e89a}.addon-callout h3{font-size:1.6rem;margin:8px 0;color:#fff}.addon-callout p{margin:0;color:#bfd0d9;line-height:1.6}.partner-outcome-note span{font-size:clamp(.9rem,1vw,1.02rem)!important;font-weight:650!important;color:#d9e9e2!important;letter-spacing:.005em!important}.partner-outcome-note strong{font-size:clamp(1rem,1.15vw,1.2rem)!important;color:#63efa1!important}.partner-outcome-note{background:linear-gradient(90deg,rgba(24,105,72,.48),rgba(7,34,43,.9))!important;border-color:rgba(64,225,137,.45)!important}
 @media(max-width:1100px){.app-showcase-grid,.cap-grid{grid-template-columns:repeat(2,1fr)}.app-showcase-grid img{height:650px}}@media(max-width:720px){.product-hero{padding:74px 0 62px}.app-showcase-grid,.website-showcase-grid,.cap-grid{grid-template-columns:1fr}.website-showcase-grid figure.wide{grid-column:auto}.app-showcase-grid img{height:auto;max-height:720px;object-fit:contain}.website-showcase-grid figcaption,.addon-callout{display:block}.website-showcase-grid figcaption span{display:block;margin-top:5px}.addon-callout .btn{margin-top:22px}.cap-card{min-height:auto}.showcase-section,.capabilities{padding:72px 0}}
+
+
+/* V21 — product page readability + premium homepage app card */
+.product-hero .eyebrow{
+  color:#148341 !important;
+  background:#eaf9ef !important;
+  border-color:#9fe0b4 !important;
+  box-shadow:0 10px 30px rgba(20,131,65,.08);
+}
+.product-hero .eyebrow:before{
+  background:#22c55e !important;
+  box-shadow:none !important;
+}
+
+/* Homepage app card: show breadth of custom work instead of one isolated phone */
+.app-card .experience-media.app-collage{
+  position:relative;
+  height:330px;
+  padding:0;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 15%,rgba(50,214,119,.16),transparent 34%),
+    linear-gradient(145deg,#f7fcf9,#edf7f1);
+}
+.app-collage .app-shot{
+  position:absolute;
+  width:43%;
+  height:88%;
+  top:7%;
+  object-fit:cover;
+  object-position:top center;
+  border-radius:20px;
+  border:1px solid rgba(18,77,48,.12);
+  box-shadow:0 22px 45px rgba(7,25,17,.18);
+  transition:transform .35s ease;
+}
+.app-collage .shot-left{left:3%;transform:rotate(-7deg) scale(.91);z-index:1}
+.app-collage .shot-center{left:28.5%;transform:translateY(-2%) scale(1.04);z-index:3}
+.app-collage .shot-right{right:3%;transform:rotate(7deg) scale(.91);z-index:2}
+.app-card:hover .app-collage .shot-left{transform:rotate(-5deg) translateY(-5px) scale(.93)}
+.app-card:hover .app-collage .shot-center{transform:translateY(-9px) scale(1.055)}
+.app-card:hover .app-collage .shot-right{transform:rotate(5deg) translateY(-5px) scale(.93)}
+.app-collage-badge{
+  position:absolute;right:14px;bottom:14px;z-index:5;
+  padding:8px 11px;border-radius:999px;background:#fff;
+  border:1px solid #dce9e1;color:#12833e;font-size:10px;
+  font-weight:900;letter-spacing:.08em;text-transform:uppercase;
+  box-shadow:0 10px 25px rgba(7,25,17,.12);
+}
+@media(max-width:640px){
+  .app-card .experience-media.app-collage{height:275px}
+  .app-collage .app-shot{width:46%;height:86%}
+  .app-collage .shot-left{left:0}
+  .app-collage .shot-center{left:27%}
+  .app-collage .shot-right{right:0}
+}
+
+/* V21 website page — stronger visual separation so the expansion is unmistakable */
+.website-showcase-grid figure{
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.website-showcase-grid figure:hover{
+  transform:translateY(-5px);
+  box-shadow:0 30px 70px rgba(7,17,31,.13);
+}
+.website-showcase-grid figure.wide img{
+  aspect-ratio:16/8.2;
+}
+.website-proof-strip{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:10px;
+  margin:28px auto 0;
+}
+.website-proof-strip span{
+  padding:8px 12px;border-radius:999px;background:#edf8f1;
+  border:1px solid #ccebd6;color:#187d40;font-size:12px;font-weight:800;
+}
