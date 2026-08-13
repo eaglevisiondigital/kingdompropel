@@ -69,3 +69,9 @@ Homepage upgraded with premium product storytelling, ministry outcome section, e
 - Added Volunteer Scheduling and Needs & Sign-Ups to the main capability grid.
 - Added /needs-signups/ landing page.
 - Added a restrained optional Professional Voiceover & Media Support callout; this is positioned as a professional service, not a core Propel software feature.
+
+## V18 Partner Platform refinement
+- Raised and enlarged the Partner Command Center preview to better use the open space in the premium add-on section.
+- Upgraded the dashboard with partner engagement, average partnership, follow-up health, richer partnership growth visualization, resource activity, recurring-gift risk, and more relationship-focused data.
+- Increased contrast/readability of the six Partner Platform capability cards and expanded their feature copy.
+- Added outcome-oriented language about retention, engagement, and partnership growth without publishing unsupported client performance statistics.
