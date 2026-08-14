@@ -75,3 +75,6 @@ Homepage upgraded with premium product storytelling, ministry outcome section, e
 - Upgraded the dashboard with partner engagement, average partnership, follow-up health, richer partnership growth visualization, resource activity, recurring-gift risk, and more relationship-focused data.
 - Increased contrast/readability of the six Partner Platform capability cards and expanded their feature copy.
 - Added outcome-oriented language about retention, engagement, and partnership growth without publishing unsupported client performance statistics.
+
+
+V24: mobile-only repairs for Partner Platform, Founding Momentum and optional voiceover sections; added Apps/Websites cross-links; added premium module UI previews for admin dashboard, kids check-in, giving/donor engagement, volunteer/needs, guest follow-up, discipleship, messaging and events.
