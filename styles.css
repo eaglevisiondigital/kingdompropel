@@ -1575,3 +1575,40 @@ html,body{max-width:100%;overflow-x:hidden}
 
 /* Volunteer & Serving expansion */
 .volunteer-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}.volunteer-feature-grid .feature-card{background:#fff;border:1px solid rgba(15,23,42,.09);border-radius:22px;padding:24px;box-shadow:0 14px 40px rgba(15,23,42,.045)}.volunteer-feature-grid h3{margin:0 0 9px;color:#0b1426;font-size:1.08rem}.volunteer-feature-grid p{margin:0;color:#64748b;line-height:1.65}.family-hub-callout{margin-top:30px;padding:38px;border-radius:28px;background:linear-gradient(135deg,#071827,#0b2230);color:#fff;box-shadow:0 24px 60px rgba(7,24,39,.16)}.family-hub-callout h2{max-width:760px;margin:15px 0 12px;color:#fff}.family-hub-callout>p{max-width:900px;color:#c9d6df;line-height:1.7}.family-schedule-examples{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}.family-schedule-examples span{padding:14px 16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.055);font-size:.92rem}.family-hub-callout .future-note{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12)}@media(max-width:900px){.volunteer-feature-grid{grid-template-columns:1fr 1fr}.family-schedule-examples{grid-template-columns:1fr 1fr}}@media(max-width:620px){.volunteer-feature-grid,.family-schedule-examples{grid-template-columns:1fr}.family-hub-callout{padding:26px}}
+
+/* V40 — final homepage polish: CTA target, aligned module previews, partner phone cleanup */
+.module-preview-grid{align-items:stretch}
+.module-preview-card{display:grid;grid-template-rows:370px 1fr;height:100%}
+.module-preview-card>.module-screen{height:370px;min-height:0}
+.module-preview-card>.module-copy{align-self:stretch}
+
+/* Keep Sarah's portrait cleanly inside one profile circle and all phone UI inside the device. */
+.partner-launch-shell .partner-phone{
+  overflow:hidden !important;
+  bottom:10px !important;
+  height:338px !important;
+}
+.partner-mobile-head .partner-avatar{
+  border-radius:50% !important;
+  overflow:hidden !important;
+  flex:0 0 auto;
+}
+.partner-mobile-head .partner-avatar img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:50% 43% !important;
+  border:0 !important;
+  border-radius:50% !important;
+  transform:scale(1.08);
+}
+.partner-mobile-section{margin-bottom:0}
+.partner-mobile-bottom{display:none !important}
+
+@media(max-width:900px){
+  .module-preview-card{grid-template-rows:auto 1fr}
+  .module-preview-card>.module-screen{height:auto;min-height:350px}
+}
+@media(max-width:640px){
+  .partner-launch-shell .partner-phone{overflow:hidden !important;height:252px !important;bottom:8px !important}
+}

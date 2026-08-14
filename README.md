@@ -98,11 +98,3 @@ V32: Refined homepage capability cards. Communication now explicitly supports ch
 V33: Expanded Church Groups page from three generic cards to six concise feature/benefit cards: group discovery by life stage/interests/location; group-specific email/text/push/in-app communication; leaders and member organization; meetings/events/calendars/resources; attendance and follow-up; and connection to Propel Family Hub. Updated hero copy to better communicate both congregant and ministry-leader benefits while preserving quick scanability.
 
 V37: Locked the final Ministry First brand-manifesto graphic on the homepage. Replaced the photography-heavy visual with the approved dark manifesto composition, preserved the original visual footprint (1389×1132), removed the redundant light feature-grid portion, updated the origin-story messaging to 28+ years of ministry experience, added the point that some desired capabilities could not be found anywhere at any price, and locked the line “the Kingdom be propelled forward.” Updated accessibility text accordingly.
-
-V38 — Aug 13, 2026
-- Locked the Ministry First manifesto visual into the home page with the letterboxing removed.
-- Normalized all green accents in that visual to Propel green (#22C55E) so it matches the rest of the site.
-- Added a completely isolated private /demo-blueprint experience for the Propel Digital Ministry Blueprint.
-- /demo-blueprint is NOT linked in public navigation, NOT added to sitemap.xml, and is marked noindex/nofollow/noarchive.
-- Added separate /demo-blueprint/blueprint.css and blueprint.js so the Blueprint cannot accidentally alter approved public pages.
-- Added Foundations Church demo branding references and initial Website, App, Command Center, module ecosystem, Family Hub, Partner Platform, workflows and reporting overview.
