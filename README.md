@@ -78,3 +78,23 @@ Homepage upgraded with premium product storytelling, ministry outcome section, e
 
 
 V24: mobile-only repairs for Partner Platform, Founding Momentum and optional voiceover sections; added Apps/Websites cross-links; added premium module UI previews for admin dashboard, kids check-in, giving/donor engagement, volunteer/needs, guest follow-up, discipleship, messaging and events.
+
+V25: fixed Custom Websites showcase image presentation so all five uploaded website concepts display in their complete native aspect ratio with no top, side, or bottom cropping on desktop or mobile.
+
+V26: fixed invisible Apps ↔ Websites cross-solution button labels on light product hero pages; added explicit dark-green text, mint fill, stronger border, icon, hover/focus states, and mobile sizing.
+
+V27: replaced the harsh white Apps↔Websites cross-solution cards with premium dark Propel-style expansion panels matching the Partner Platform design family, including strong readable typography, subtle green gradients, and consistent green CTAs on desktop and mobile.
+
+V28: Added a comprehensive, original Propel capability system to the main sales flow. It represents People/Household CRM, giving and donor engagement, DAF, card/ACH, QuickBooks, kiosk giving, email/SMS/in-app communication, workflows, tasks, kids check-in, events, forms, public/private calendars, reporting, permissions/security, multi-campus management, media/resources, apps, websites and Partner Platform expansion. The section is intentionally organized by ministry outcome rather than copying the reference screenshots or dumping every feature into one grid.
+
+V29: Established Family Hub as Propel's branded name for the people/household ministry CRM capability. Public-facing language now leads with Family Hub while retaining "People & Household CRM" as explanatory terminology where useful. Homepage positioning: "A ministry CRM built around people, not records." Current copy intentionally describes available people/household/relationship functionality without promising future custom-platform capabilities before they launch.
+
+V30: Expanded Propel Giving highlights without turning the page into a feature catalog. Added year-round giving history and self-service/printable year-end statements; QuickBooks-connected financials; designated funds, fundraising campaigns and pledges; registration payments and payment-over-time options for camps, mission trips and events; and retained the connected website/app ministry experience. Combined simple + recurring giving to keep the section to a balanced six-card grid.
+
+V31: Expanded Church Check-In page to a concise six-card feature/benefit grid. Added kids, youth and serve-team check-in; secure family check-in; labels, rooms/session assignments and attendance; camps/events/special check-in; optional custom-app geofenced check-in prompts within a ministry-selected 1–5 mile radius; and parent text notifications for classroom needs/early pickup. Updated hero copy to position check-in as a broader connected ministry capability without overloading the page.
+
+V32: Refined homepage capability cards. Communication now explicitly supports church-wide or targeted group messaging across push, email, SMS and in-app messages. Events & Registrations now explicitly includes collecting payments through event registration. These remain homepage capability anchors rather than separate standalone pages at this stage.
+
+V33: Expanded Church Groups page from three generic cards to six concise feature/benefit cards: group discovery by life stage/interests/location; group-specific email/text/push/in-app communication; leaders and member organization; meetings/events/calendars/resources; attendance and follow-up; and connection to Propel Family Hub. Updated hero copy to better communicate both congregant and ministry-leader benefits while preserving quick scanability.
+
+V37: Locked the final Ministry First brand-manifesto graphic on the homepage. Replaced the photography-heavy visual with the approved dark manifesto composition, preserved the original visual footprint (1389×1132), removed the redundant light feature-grid portion, updated the origin-story messaging to 28+ years of ministry experience, added the point that some desired capabilities could not be found anywhere at any price, and locked the line “the Kingdom be propelled forward.” Updated accessibility text accordingly.
