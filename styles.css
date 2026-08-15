@@ -1612,3 +1612,43 @@ html,body{max-width:100%;overflow-x:hidden}
 @media(max-width:640px){
   .partner-launch-shell .partner-phone{overflow:hidden !important;height:252px !important;bottom:8px !important}
 }
+
+/* V42 precision polish — mobile pathway readability + desktop experience-card symmetry */
+@media (max-width:640px){
+  /* Preserve intentional line breaks on mobile. Hiding <br> caused words on either side
+     of the break to concatenate (for example: "taketheir"). */
+  .propel-pathway-step>span:last-child br{display:block}
+  .propel-pathway-step>span:last-child{
+    line-height:1.5;
+    max-width:270px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+@media (min-width:981px){
+  .experience-grid{align-items:stretch}
+  .experience-card{
+    height:100%;
+    display:grid;
+    grid-template-rows:auto 338px auto 1fr auto;
+    align-content:start;
+  }
+  .experience-card .experience-media{
+    height:338px;
+    margin:10px 0 22px;
+  }
+  .hub-card .experience-media{
+    height:338px;
+    padding:24px;
+  }
+  .experience-card h3{
+    align-self:start;
+  }
+  .experience-card p{
+    align-self:start;
+  }
+  .experience-card .text-link{
+    align-self:end;
+  }
+}
