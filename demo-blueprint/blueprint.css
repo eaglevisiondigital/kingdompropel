@@ -33,3 +33,39 @@
 @media(max-width:1180px){:root{--sidebar:240px}.bp-sidebar{padding:28px 18px}.bp-brand img{width:165px}.bp-slide{padding:72px 38px}.cover-grid,.problem-grid,.ecosystem-layout,.mockup-split,.mobile-layout,.groups-layout,.serving-layout,.prayer-layout,.event-layout,.communication-layout,.connect-layout,.ai-layout{grid-template-columns:1fr}.app-showcase{grid-template-columns:1fr 1fr}.app-heading{grid-column:1/3}.cover-art{min-height:620px}.giving-grid{grid-template-columns:1fr}.operations-layout>div:first-child,.insight-layout>div:first-child,.partner-layout>div:first-child{grid-template-columns:1fr}.partner-dashboard,.ops-dashboard{grid-template-columns:150px 1fr}.difference-cards{grid-template-columns:1fr 1fr}.roadmap{grid-template-columns:1fr 1fr 1fr 1fr 1fr}.roadmap>i{display:none}.recommendation-layout{grid-template-columns:1fr}.chapter-number{display:none}}
 @media(max-width:860px){.bp-sidebar{transform:translateX(-100%);transition:.3s;width:280px}.bp-sidebar.open{transform:none}.bp-main{margin-left:0}.bp-menu{display:block;position:fixed;top:14px;right:14px;z-index:120;background:#061712;color:white;border:1px solid rgba(255,255,255,.15);border-radius:9px;padding:9px 11px}.bp-slide{min-height:auto;padding:90px 22px 72px}.two-col.editorial{grid-template-columns:1fr}.chapter-stamp{min-height:auto;border-right:0;border-bottom:1px solid #d6c8ac;padding-bottom:15px}.journey{display:grid;grid-template-columns:1fr 1fr;gap:12px}.journey i{display:none}.impact-pair,.care-cards,.feature-list,.event-benefits,.difference-cards{grid-template-columns:1fr}.app-showcase{grid-template-columns:1fr}.app-heading{grid-column:auto}.hero-browser{left:3%;width:94%;transform:none}.dashboard-float{width:90%;right:5%}.cover-art{min-height:650px}.hero-phone{left:2%}.premium-browser{height:520px}.site-hero{grid-template-columns:1fr}.hero-image{display:none}.site-page header nav{display:none}.site-page header img{width:200px}.site-path{height:100px}.giving-kpis,.partner-kpis,.ops-kpis{grid-template-columns:1fr 1fr}.care-flow{grid-template-columns:1fr}.care-flow i{display:none}.service-steps{gap:6px}.event-console{grid-template-columns:70px 1fr}.registrant-list{grid-column:1/3;border-left:0;border-top:1px solid #ddd8cf;padding:15px 0 0}.media-layout{grid-template-columns:1fr}.media-layout>div:first-child{grid-column:auto}.workflow-board{grid-template-columns:1fr}.workflow-board>i{display:none}.partner-dashboard,.ops-dashboard{grid-template-columns:1fr}.partner-dashboard aside,.ops-dashboard aside{display:none}.ops-grid{grid-template-columns:1fr}.insight-grid{grid-template-columns:1fr 1fr}.insight-grid article.wide{grid-column:1/3}.tap-scene{height:700px}.nfc-card{width:90%}.tap-phone{right:2%;top:210px}.difference-banner{grid-template-columns:1fr;gap:10px;text-align:center}.difference-banner span:nth-child(3){text-align:center}.roadmap{grid-template-columns:1fr 1fr}.recommendation-grid{grid-template-columns:1fr}.future-inner h2{font-size:64px}.bp-nav a{padding:8px 10px}}
 @media(max-width:560px){h1{font-size:58px}h2{font-size:49px}.lead,.lead.small{font-size:15px}.cover-grid{grid-template-columns:1fr}.cover-art{min-height:560px}.hero-browser{height:400px}.web-hero{height:250px;padding:35px 30px}.web-hero h3{font-size:34px}.web-ui header img{width:180px}.web-ui header nav{display:none}.web-path{height:72px}.dashboard-float{display:none}.hero-phone{width:175px;height:390px;top:33%}.app-photo{height:130px;padding-top:55px}.app-photo span{font-size:16px}.app-photo strong{font-size:20px}.prepared{gap:20px;flex-direction:column}.editorial-copy h2{font-size:49px}.premium-browser{height:430px}.site-hero>div:first-child{padding:35px 25px}.site-hero h3{font-size:39px}.site-path div{padding:12px}.site-path span{display:none}.phone-stage{min-height:590px}.mobile-phone{width:290px;height:570px}.callout{right:2%;top:64%;max-width:220px}.big-phone{width:290px;height:620px}.giving-kpis{grid-template-columns:1fr 1fr}.amounts{grid-template-columns:repeat(3,1fr)}.group-list article{grid-template-columns:45px 1fr}.group-list em{display:none}.team-row{grid-template-columns:1fr 110px}.team-row em{display:none}.checkin-head img{width:190px}.care-route{grid-template-columns:1fr}.care-route i{display:none}.media-player{height:330px}.partner-main{padding:18px}.partner-kpis{grid-template-columns:1fr 1fr}.ops-kpis{grid-template-columns:1fr 1fr}.momentum svg{height:170px}.insight-grid{grid-template-columns:1fr}.insight-grid article.wide{grid-column:auto}.tap-scene{height:760px}.nfc-card{left:5%}.tap-phone{width:250px;top:290px}.ai-phone{width:100%}.roadmap{grid-template-columns:1fr}.future-inner h2{font-size:50px}.future-foundations{width:290px}.slide-no{right:15px;bottom:12px}}
+
+/* V44 — approved review refinements (Aug. 14, 2026)
+   Sidebar readability + Foundations-specific opening hero. */
+.bp-sidebar{background:linear-gradient(180deg,#041510 0%,#03130e 100%)}
+.bp-nav a{color:#b2c5bc;font-size:12.5px}
+.bp-nav a b{color:#78978a}
+.bp-sidebar-footer small{color:#8eaaa0}
+.bp-sidebar-footer strong{color:#fff;font-size:12.5px}
+.bp-sidebar-footer span{color:#83a196}
+
+/* Opening Blueprint belongs visually to Foundations Church, not Propel green. */
+.bp-cover.bp-dark{background:radial-gradient(circle at 78% 24%,rgba(203,163,106,.13) 0,rgba(17,17,17,.82) 31%,#080807 63%,#030303 100%)}
+.bp-cover .ambient.a1{background:radial-gradient(circle,rgba(203,163,106,.12),transparent 70%)}
+.bp-cover .ambient.a2{background:radial-gradient(circle,rgba(255,255,255,.045),transparent 68%)}
+.bp-cover .foundation-logo,.bp-cover .web-ui header img,.bp-cover .app-head img{mix-blend-mode:normal;object-fit:contain;object-position:left center}
+.bp-cover .foundation-logo{width:min(430px,78%)}
+.bp-cover .orbit{border-color:rgba(203,163,106,.17)}
+.bp-cover .browser{border-color:rgba(203,163,106,.2);box-shadow:0 34px 100px rgba(0,0,0,.48)}
+.bp-cover .browser-top{background:#111418}
+.bp-cover .web-ui header{background:#050505;border-bottom:1px solid rgba(203,163,106,.16)}
+.bp-cover .web-ui header img{height:54px;width:250px}
+.bp-cover .web-hero{background:radial-gradient(circle at 72% 45%,rgba(203,163,106,.24),transparent 34%),linear-gradient(120deg,#14120f,#070707 72%)}
+.bp-cover .iphone{border-color:#151515;background:#050505}
+.bp-cover .app-head{background:#070707}
+.bp-cover .app-photo{background:linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,.12)),radial-gradient(circle at 52% 20%,#4a3b29,#111 64%)}
+.bp-cover .app-service{background:#17130e;border:1px solid rgba(203,163,106,.22)}
+.bp-cover .app-service small{color:var(--gold)}
+.bp-cover .app-grid span,.bp-cover .app-grid span:nth-child(2),.bp-cover .app-grid span:nth-child(3),.bp-cover .app-grid span:nth-child(4){background:#151515;border:1px solid rgba(203,163,106,.2);color:#eee9df}
+.bp-cover .app-tabs{background:#090909;border-top:1px solid rgba(203,163,106,.16)}
+.bp-cover .dashboard-float{background:#071d2a;border-color:#1a5067;box-shadow:0 30px 80px rgba(0,0,0,.48)}
+
+@media(max-width:860px){
+  .bp-nav a{color:#c0d0c8}
+  .bp-nav a b{color:#86a698}
+  .bp-sidebar-footer small,.bp-sidebar-footer span{color:#94aea3}
+}
