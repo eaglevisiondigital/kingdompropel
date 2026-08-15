@@ -1,18 +1,23 @@
 # Kingdom Propel Production V52
 
-Built from V51 and includes all approved Blueprint changes since the V51 download.
+Partner Platform value-and-access expansion.
 
-## Digital Ministry Blueprint updates
-- Preserves the V51 premium scrolling Foundations Church website showcase on slide 06.
-- Slide 07 Mobile Website now uses the approved Option A Foundations Church mobile website visual, with premium presentation and Foundations black/gold/ivory styling.
-- Slide 08 Church App now uses the approved Option 2 iPhone 17 Pro Max visual with corrected device proportions, a stronger feature presentation, and Foundations black/gold/ivory styling.
-- Slide 09 Giving + Donor Engagement expands the giving story to include:
-  - Online giving plus manual cash, check, and other-source entries
-  - Complete reporting across sources and funds
-  - First-time donor notifications
-  - Inactive donor notifications
-  - User-defined large-gift alert thresholds
-  - Thank-you engagement by email, text, or video
-- Removed green accents from the Foundations-specific mobile/app/giving presentation areas while preserving Propel green in the persistent Propel navigation/sidebar brand.
+## Updated
+- Main Propel homepage Partner Platform showcase
+  - Stronger positioning beyond donor management
+  - Exclusive partner access and early registration language
+  - Partner-only experiences and premium content positioning
+  - Partner mobile preview now highlights exclusives, included courses and library access
+- Dedicated Partner Platform page
+  - New Belonging / Access / Value section
+  - Exclusive resources, early + priority event access, partner-only events and included courses
+  - Expanded capability grid for premium resource library, special giving, tier-based benefits and automatic entitlements
+  - Automatic benefit-unlock flow
+- Digital Ministry Blueprint — Partner Platform slide
+  - Rebuilt in Foundations Church black / white / gold visual system (no Propel green in slide content)
+  - Foundations-branded Partner Hub interface
+  - Early event access, partner-only live experiences, included books/media, included courses, special giving opportunities
+  - Automatic-entitlement positioning based on partnership level
 
-This package contains the complete production site, not only the modified Blueprint files.
+## Source
+Built forward from `kingdom-propel-production-v51-complete-ecosystem-architecture.zip`.
