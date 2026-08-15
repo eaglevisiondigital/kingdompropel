@@ -1712,3 +1712,42 @@ html,body{max-width:100%;overflow-x:hidden}
     align-self:flex-start;
   }
 }
+
+
+/* V45 — Connected Ministry Hub mockup frame fit
+   Keep the approved dashboard fully visible while sizing the media frame to the
+   dashboard's native 4:3 composition instead of leaving excess empty space. */
+.hub-card .experience-media{
+  height:auto;
+  min-height:0;
+  aspect-ratio:4 / 3;
+  padding:12px;
+}
+.hub-card .experience-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  transform:none;
+}
+@media (min-width:981px){
+  .hub-card .experience-media{
+    height:auto;
+    min-height:0;
+    flex:0 0 auto;
+    aspect-ratio:4 / 3;
+    padding:12px;
+  }
+  .hub-card .experience-media img{
+    transform:none;
+  }
+}
+@media (max-width:640px){
+  .hub-card .experience-media{
+    height:auto;
+    min-height:0;
+    aspect-ratio:4 / 3;
+    padding:10px;
+    margin:10px 0 22px;
+  }
+}
