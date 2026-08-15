@@ -400,98 +400,40 @@
   .hub-shot-v49{height:135px;padding:3px;border-radius:9px;clip-path:inset(0 round 9px)}
 }
 
-/* v51 — Digital Front Door premium scrolling website showcase */
-#website .mockup-split{grid-template-columns:.68fr 1.32fr;gap:58px}
-#website .green-quote{color:#846333;border-color:#cba36a;background:rgba(203,163,106,.08)}
-.website-demo-wrap{position:relative;min-width:0}
-.website-demo-label{display:flex;align-items:center;gap:12px;margin:0 0 11px 12px;font-size:9px;letter-spacing:.19em;color:#8d7651}
-.website-demo-label span{font-weight:800}.website-demo-label b{font-weight:600;color:#6b6b65}
-.website-tour-browser{height:610px;background:#111;border-color:#cfc4b2;box-shadow:0 30px 85px rgba(40,29,15,.18),0 5px 18px rgba(40,29,15,.08)}
-.website-tour-browser .browser-top{height:34px;background:#111a23;border-bottom:1px solid rgba(203,163,106,.2)}
-.website-tour-browser .browser-top em{margin-left:auto;color:#cba36a;font-size:7px;letter-spacing:.18em;font-style:normal;font-weight:800}
-.website-tour-viewport{position:relative;height:576px;overflow:hidden;background:#0a0a09;outline:none;cursor:default}
-.website-tour-image{display:block;width:100%;height:auto;max-width:none;transform:translateY(0);animation:foundations-site-tour 24s ease-in-out infinite alternate;will-change:transform}
-.website-tour-browser:hover .website-tour-image,.website-tour-viewport:focus .website-tour-image{animation-play-state:paused}
-.website-tour-caption{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;color:#857a69;font-size:8px;letter-spacing:.16em;font-weight:700;text-align:center;white-space:nowrap}
-.website-tour-caption i{width:4px;height:4px;border-radius:50%;background:#cba36a;opacity:.75}
-@keyframes foundations-site-tour{
-  0%,8%{transform:translateY(0)}
-  92%,100%{transform:translateY(calc(-100% + 576px))}
-}
-@media(max-width:1180px){
-  #website .mockup-split{grid-template-columns:1fr}
-  .website-demo-wrap{max-width:900px;width:100%;margin:8px auto 0}
-}
-@media(max-width:860px){
-  .website-tour-browser{height:520px}
-  .website-tour-viewport{height:486px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
-  .website-tour-image{animation:none;transform:none}
-  .website-tour-caption span:nth-of-type(2){display:none}
-  .website-tour-caption i:nth-of-type(1){display:none}
-}
-@media(max-width:560px){
-  .website-demo-label{margin-left:4px;flex-wrap:wrap;gap:6px 10px}
-  .website-tour-browser{height:450px;border-radius:15px}
-  .website-tour-viewport{height:416px}
-  .website-tour-caption{white-space:normal;line-height:1.45;gap:7px}
-}
-@media(prefers-reduced-motion:reduce){
-  .website-tour-image{animation:none!important;transform:none!important}
-  .website-tour-viewport{overflow-y:auto}
-}
+/* V51 — complete connected ecosystem architecture */
+.ecosystem-layout-v48{grid-template-columns:.70fr 1.30fr;gap:30px;align-items:center}
+.ecosystem-copy-v48 h2{font-size:64px}
+.ecosystem-copy-v48 .lead{font-size:14px;line-height:1.62}
+.eco-architecture-v51{min-height:720px;display:flex;flex-direction:column;gap:14px;position:relative;padding:20px;border:1px solid rgba(203,163,106,.2);border-radius:24px;background:linear-gradient(145deg,rgba(18,16,13,.94),rgba(7,8,8,.97));box-shadow:0 34px 80px rgba(0,0,0,.36),inset 0 1px 0 rgba(255,255,255,.035);overflow:hidden}
+.eco-architecture-v51:before{content:"";position:absolute;inset:-20% 8% 48% 8%;background:radial-gradient(circle at 50% 70%,rgba(203,163,106,.16),transparent 60%);pointer-events:none}
+.eco-architecture-head-v51{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 8px 12px;border-bottom:1px solid rgba(203,163,106,.18);font-size:7.8px;letter-spacing:.17em;color:#bdb5a8;font-weight:800;white-space:nowrap}
+.eco-architecture-head-v51 i{width:28px;height:1px;background:linear-gradient(90deg,transparent,#cba36a,transparent)}
+.eco-core-zone-v51{position:relative;z-index:2;display:grid;grid-template-columns:190px 1fr;align-items:center;gap:18px;min-height:170px;padding:8px 10px 12px}
+.eco-core-v51{position:relative;width:164px;height:164px;border-radius:50%;display:grid;place-items:center;align-content:center;text-align:center;background:radial-gradient(circle at 50% 38%,#29231a 0%,#15130f 50%,#080909 82%);border:1px solid rgba(203,163,106,.62);box-shadow:0 0 0 10px rgba(203,163,106,.03),0 16px 50px rgba(0,0,0,.42);margin:auto}
+.eco-core-rings-v51{position:absolute;inset:-18px;border:1px solid rgba(203,163,106,.15);border-radius:50%}
+.eco-core-v51 img{width:68px;height:68px;object-fit:contain;margin-bottom:3px;filter:grayscale(1) sepia(1) saturate(1.7) brightness(1.14) drop-shadow(0 8px 16px rgba(0,0,0,.35))}
+.eco-core-v51 b{font-size:20px;letter-spacing:.05em;color:#fff}.eco-core-v51>span:not(.eco-core-rings-v51){font-size:7.5px;letter-spacing:.2em;color:#d0b07e;margin-top:2px}.eco-core-v51 small{font-size:6px;letter-spacing:.16em;color:#857b6d;margin-top:7px}
+.eco-journey-v51{display:grid;grid-template-columns:repeat(11,auto);align-items:center;justify-content:space-between;gap:5px;padding:15px 16px;border:1px solid rgba(203,163,106,.22);border-radius:16px;background:linear-gradient(90deg,rgba(203,163,106,.07),rgba(255,255,255,.02));box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+.eco-journey-v51 span{display:flex;flex-direction:column;gap:3px;min-width:0}.eco-journey-v51 b{font-size:10px;color:#fff;letter-spacing:.04em}.eco-journey-v51 small{font-size:6.7px;color:#9f978b;white-space:nowrap}.eco-journey-v51 i{font-style:normal;color:#cba36a;font-size:15px}
+.eco-system-grid-v51{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.eco-system-group-v51{padding:13px 13px 12px;border:1px solid rgba(203,163,106,.22);border-radius:16px;background:linear-gradient(145deg,rgba(24,22,18,.92),rgba(10,11,10,.97));box-shadow:0 13px 28px rgba(0,0,0,.18)}
+.eco-group-title-v51{display:grid;grid-template-columns:28px 1fr;gap:9px;align-items:start;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(203,163,106,.14)}
+.eco-group-title-v51>span{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(203,163,106,.42);background:rgba(203,163,106,.08);color:#d4ad73;font-size:8px;font-weight:900}
+.eco-group-title-v51 b{display:block;color:#fff;font-size:13.5px;line-height:1.1;margin-bottom:3px}.eco-group-title-v51 small{display:block;color:#968e82;font-size:7.2px;line-height:1.35}
+.eco-chip-grid-v51{display:grid;grid-template-columns:1fr 1fr;gap:7px}.eco-chip-grid-v51.four-up{grid-template-columns:1fr 1fr}
+.eco-chip-grid-v51>span{display:block;padding:9px 10px;min-height:51px;border-radius:10px;border:1px solid rgba(203,163,106,.13);background:rgba(255,255,255,.018)}
+.eco-chip-grid-v51 b{display:block;color:#f5f1e8;font-size:9px;line-height:1.2;margin-bottom:3px}.eco-chip-grid-v51 small{display:block;color:#9d9588;font-size:6.8px;line-height:1.32}
+.eco-system-group-v51:nth-child(3),.eco-system-group-v51:nth-child(4){border-color:rgba(203,163,106,.27)}
+@media(max-width:1280px){.ecosystem-layout-v48{grid-template-columns:1fr}.eco-architecture-v51{max-width:880px;width:100%;margin:18px auto 0}.ecosystem-copy-v48{max-width:880px;margin:0 auto}.ecosystem-copy-v48 h2{font-size:58px}.ecosystem-pillars-v48{max-width:none;grid-template-columns:repeat(3,1fr)}.ecosystem-pillars-v48 article{min-height:118px}}
+@media(max-width:860px){.eco-architecture-v51{padding:14px;border-radius:18px}.eco-architecture-head-v51{font-size:6.5px;gap:7px;overflow:hidden}.eco-core-zone-v51{grid-template-columns:1fr;gap:14px}.eco-core-v51{width:154px;height:154px}.eco-journey-v51{grid-template-columns:repeat(3,1fr);gap:8px}.eco-journey-v51 i{display:none}.eco-journey-v51 span{padding:8px;border-bottom:1px solid rgba(203,163,106,.12)}.eco-system-grid-v51{grid-template-columns:1fr}.eco-chip-grid-v51{grid-template-columns:1fr 1fr}.ecosystem-pillars-v48{grid-template-columns:1fr}}
+@media(max-width:560px){.ecosystem-copy-v48 h2{font-size:46px}.eco-chip-grid-v51,.eco-chip-grid-v51.four-up{grid-template-columns:1fr}.eco-journey-v51{grid-template-columns:1fr 1fr}.eco-architecture-head-v51 span:last-child{display:none}.eco-architecture-head-v51 i:last-of-type{display:none}.eco-chip-grid-v51 b{font-size:10px}.eco-chip-grid-v51 small{font-size:7.4px}}
 
-/* v52 — Foundations Church approved mobile/app assets + giving engagement expansion */
-#mobile{background:#f4efe4;color:#07111f}
-#mobile .mobile-v52{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
-#mobile .mobile-benefits span{background:#fbfaf7;border-color:#d8c8ae;color:#31363a}
-.foundation-principle{margin-top:24px;border-left:3px solid #cba36a;padding:14px 0 14px 18px;display:grid;gap:5px;max-width:640px}
-.foundation-principle b{font-size:9px;letter-spacing:.2em;color:#9b7138}.foundation-principle span{font:500 16px/1.45 Georgia,serif;color:#41382e}
-.approved-mobile-stage{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:690px;position:relative}
-.approved-mobile-shell{width:min(390px,78%);padding:0;border-radius:52px;overflow:hidden;filter:drop-shadow(0 28px 42px rgba(45,34,18,.22));background:#f4efe4}
-.approved-mobile-shell img{display:block;width:100%;height:auto}
-.mobile-proof-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(640px,100%);margin-top:18px}
-.mobile-proof-row span{border-top:1px solid #cba36a;padding:10px 8px 0;text-align:center;color:#766f67;font-size:9px;letter-spacing:.04em}.mobile-proof-row b{display:block;color:#8c6633;font-size:8px;letter-spacing:.18em;margin-bottom:4px}
-
-#app{background:radial-gradient(circle at 67% 24%,rgba(203,163,106,.14),transparent 31%),linear-gradient(135deg,#080806 0%,#12100c 52%,#070706 100%);color:#fff}
-#app .app-v52{grid-template-columns:.78fr .72fr 1fr;gap:42px;align-items:center}
-#app .app-heading{grid-column:auto}
-#app .app-heading h2{font-size:clamp(48px,4.7vw,78px)}
-#app .app-heading .lead{color:#c8c3b9}
-.app-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:28px;max-width:520px}.app-proof span{border:1px solid rgba(203,163,106,.35);border-radius:13px;padding:13px 11px;color:#a9a39a;font-size:8px;line-height:1.35}.app-proof b{display:block;color:#cba36a;font-size:15px;margin-bottom:3px}
-.app-approved-visual{display:flex;align-items:center;justify-content:center;min-width:0}.app-approved-visual img{display:block;width:min(390px,100%);height:auto;filter:drop-shadow(0 34px 54px rgba(0,0,0,.42))}
-.app-experience-panel{border:1px solid rgba(203,163,106,.28);border-radius:24px;padding:28px;background:linear-gradient(180deg,rgba(203,163,106,.06),rgba(255,255,255,.015));box-shadow:0 24px 70px rgba(0,0,0,.18)}
-.foundation-pill{display:inline-flex;border:1px solid rgba(203,163,106,.48)!important;color:#cba36a!important;background:rgba(203,163,106,.06)!important}
-.app-experience-panel h3{font:500 38px/1.03 Georgia,serif;margin:18px 0 14px;color:#fff}.app-experience-panel>p{color:#bdb8af;font-size:13px;line-height:1.55}
-.app-capability-list{display:grid;gap:0;margin-top:18px}.app-capability-list article{display:grid;gap:3px;padding:12px 0;border-top:1px solid rgba(203,163,106,.16)}.app-capability-list b{color:#cba36a;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.app-capability-list span{color:#d6d0c5;font-size:10px;line-height:1.4}
-
-#giving{background:#fbfaf7;color:#07111f}
-#giving .section-top>p:last-child{color:#66716e;max-width:1040px;margin-left:auto;margin-right:auto;line-height:1.55}
-#giving .giving-grid{grid-template-columns:.82fr 1.18fr;gap:26px}
-#giving .giving-form{border-color:#d8c7aa;box-shadow:0 18px 42px rgba(38,28,13,.06)}
-#giving .give-submit{background:#16130f;color:#f5eadb;border:1px solid #cba36a}
-#giving .segments .active{background:#f7eddd;color:#6f4f27}
-#giving .giving-dashboard{background:linear-gradient(145deg,#11100e,#1b1711);border:1px solid rgba(203,163,106,.44);box-shadow:0 26px 58px rgba(37,26,10,.16)}
-#giving .big-number em{color:#cba36a}
-#giving .giving-kpis span,#giving .trend-line{background:#211c15;border:1px solid rgba(203,163,106,.14)}
-#giving .giving-kpis span{color:#968a79}#giving .giving-kpis b{color:#fff8ed}
-#giving .care-note{border-color:rgba(203,163,106,.42);background:rgba(203,163,106,.04)}#giving .care-note b{color:#cba36a}#giving .care-note span{color:#b8ad9d}
-.giving-capabilities{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.giving-capabilities article{position:relative;border:1px solid #d8c9b3;background:#fffdfa;border-radius:15px;padding:18px 18px 17px;min-height:128px}.giving-capabilities article:before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:2px;background:#cba36a}.giving-capabilities span{font-size:8px;letter-spacing:.18em;color:#a4763d;font-weight:800}.giving-capabilities b{display:block;font:600 18px/1.15 Georgia,serif;color:#17130e;margin:7px 0}.giving-capabilities p{font-size:9px;line-height:1.5;color:#6f716d;margin:0}
-
-/* Remove Propel green from Foundations-specific blueprint slides while preserving the green Propel sidebar brand. */
-#mobile .green,#mobile .eyebrow.green,#app .green,#app .eyebrow.green,#giving .green,#giving .eyebrow.green{color:#cba36a!important}
-
-@media(max-width:1180px){
-  #mobile .mobile-v52{grid-template-columns:1fr;gap:34px}.approved-mobile-stage{min-height:auto}.approved-mobile-shell{width:min(390px,66%)}
-  #app .app-v52{grid-template-columns:1fr 1fr}.app-heading{grid-column:1/-1!important}.app-experience-panel{align-self:stretch}
-  .giving-capabilities{grid-template-columns:1fr 1fr}
-}
-@media(max-width:860px){
-  #app .app-v52{grid-template-columns:1fr}.app-heading{grid-column:auto!important}.app-approved-visual img{width:min(390px,76vw)}
-  .mobile-proof-row{grid-template-columns:1fr}.mobile-proof-row span{text-align:left}
-  .giving-capabilities{grid-template-columns:1fr}
-}
-@media(max-width:560px){
-  .approved-mobile-shell{width:min(330px,92%);border-radius:42px}.approved-mobile-stage{padding-top:8px}
-  .app-proof{grid-template-columns:1fr}.app-experience-panel{padding:20px}.app-experience-panel h3{font-size:31px}
-  #giving .giving-grid{grid-template-columns:1fr}.giving-capabilities article{min-height:auto}
-}
+/* V52 — Foundations-branded Partner Platform: belonging, access, resources + impact */
+.bp-foundations-dark{background:radial-gradient(circle at 74% 28%,rgba(203,163,106,.13),transparent 32%),linear-gradient(135deg,#0b0a08 0%,#15120d 52%,#070706 100%);color:#fff}.bp-foundations-dark .slide-no{color:rgba(255,255,255,.34)}
+.partner-premium-layout{max-width:1360px}.partner-intro{display:grid!important;grid-template-columns:.92fr 1.08fr!important;gap:68px!important;align-items:end!important;margin-bottom:24px!important}.partner-intro h2{font-size:clamp(48px,4.6vw,76px);margin-bottom:0}.partner-intro .lead{color:#d0c9bd;max-width:650px}.partner-value-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.partner-value-tags span{padding:8px 12px;border:1px solid rgba(203,163,106,.3);border-radius:999px;color:#d6b681;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.foundations-partner-dashboard{grid-template-columns:210px 1fr;min-height:430px;background:#0d0c0a;border:1px solid rgba(203,163,106,.28);box-shadow:0 26px 70px rgba(0,0,0,.32)}.foundations-partner-dashboard aside{background:#080807;border-right:1px solid rgba(203,163,106,.18);padding:22px 16px}.foundations-mini-brand{display:grid;gap:9px;margin-bottom:13px}.foundations-mini-brand img{width:150px;max-height:50px;object-fit:contain;object-position:left center}.foundations-mini-brand b{font-size:8px;letter-spacing:.22em;color:#d0ac73}.foundations-partner-dashboard aside>span{color:#988f82;padding:8px 10px}.foundations-partner-dashboard aside .active{background:rgba(203,163,106,.12);color:#f3dfbd;border:1px solid rgba(203,163,106,.2)}.foundations-partner-dashboard .partner-main{padding:22px 24px;background:radial-gradient(circle at 82% 8%,rgba(203,163,106,.09),transparent 34%),#100f0d}.foundations-partner-dashboard .partner-main header small{color:#cda66b}.foundations-partner-dashboard .partner-main header h3{font-size:26px}.foundations-partner-dashboard .partner-main header i{background:#cba36a;color:#17120d}.foundations-partner-dashboard .impact-banner{background:linear-gradient(135deg,#211b13,#16130f);border-color:rgba(203,163,106,.35);padding:14px 18px}.foundations-partner-dashboard .impact-banner small{color:#d2aa6b}.foundations-partner-dashboard .impact-banner b{font-size:38px}.foundations-partner-dashboard .impact-banner span{color:#b8afa2}.foundations-partner-dashboard .impact-line{background:#352a1d}.foundations-partner-dashboard .impact-line i{background:linear-gradient(90deg,#a97c40,#dfbd82)}
+.partner-benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:12px 0}.partner-benefit-grid article{min-height:120px;padding:13px;border:1px solid rgba(203,163,106,.2);border-radius:12px;background:linear-gradient(145deg,#17140f,#0e0d0b);display:flex;flex-direction:column}.partner-benefit-grid small{font-size:7px;letter-spacing:.12em;color:#cda66b}.partner-benefit-grid b{font:500 15px Georgia,serif;color:#fff;margin:6px 0}.partner-benefit-grid span{font-size:8px;line-height:1.4;color:#aaa297;flex:1}.partner-benefit-grid em{font-style:normal;font-size:7px;letter-spacing:.07em;color:#e2bf85;margin-top:8px}.partner-lower-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.foundations-partner-dashboard .field-update,.special-opportunity{padding:11px 13px;border-radius:10px;background:#17140f;border:1px solid rgba(203,163,106,.18)}.foundations-partner-dashboard .field-update small,.special-opportunity small{font-size:7px;color:#cda66b}.foundations-partner-dashboard .field-update b,.special-opportunity b{display:block;margin-top:4px;font-size:9px}.special-opportunity span{display:block;font-size:7px;color:#a59d91;margin-top:3px}
+.partner-blueprint-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}.partner-blueprint-benefits>span{padding:12px 14px;border-radius:12px;border:1px solid rgba(203,163,106,.18);background:rgba(255,255,255,.025)}.partner-blueprint-benefits b{display:block;color:#fff;font-size:10px;margin-bottom:4px}.partner-blueprint-benefits small{color:#9f978b;font-size:8px;line-height:1.4}
+@media(max-width:1180px){.partner-intro{grid-template-columns:1fr!important;gap:18px!important}.foundations-partner-dashboard{grid-template-columns:150px 1fr}.partner-benefit-grid{grid-template-columns:1fr 1fr}.partner-blueprint-benefits{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.foundations-partner-dashboard{grid-template-columns:1fr}.foundations-partner-dashboard aside{display:none}.partner-blueprint-benefits{grid-template-columns:1fr 1fr}.partner-lower-row{grid-template-columns:1fr}.partner-premium-layout{padding-bottom:20px}}
+@media(max-width:560px){.partner-benefit-grid,.partner-blueprint-benefits{grid-template-columns:1fr}.foundations-partner-dashboard .partner-main{padding:16px}.partner-intro h2{font-size:46px}}
