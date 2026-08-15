@@ -1751,3 +1751,53 @@ html,body{max-width:100%;overflow-x:hidden}
     margin:10px 0 22px;
   }
 }
+
+/* V47 — desktop experience-card symmetry
+   Keep all three solution cards on the same vertical rhythm: matching media frames,
+   headline baseline, copy zone, and bottom CTA alignment. The Ministry Hub dashboard
+   remains fully visible inside the shared frame without cropping. */
+@media (min-width:981px){
+  .experience-grid{
+    align-items:stretch;
+  }
+  .experience-card{
+    height:100%;
+    min-height:100%;
+    display:flex;
+    flex-direction:column;
+  }
+  .experience-card .experience-media,
+  .app-card .experience-media.app-collage,
+  .web-card .experience-media,
+  .hub-card .experience-media{
+    width:100%;
+    height:350px;
+    min-height:350px;
+    max-height:350px;
+    flex:0 0 350px;
+    aspect-ratio:auto;
+    box-sizing:border-box;
+    margin:10px 0 22px;
+  }
+  .hub-card .experience-media{
+    padding:14px;
+  }
+  .hub-card .experience-media img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+    transform:scale(1.04);
+  }
+  .experience-card h3{
+    min-height:34px;
+    margin:0 8px 8px;
+  }
+  .experience-card p{
+    min-height:86px;
+    margin:0 8px 18px;
+  }
+  .experience-card .text-link{
+    margin:auto 8px 8px;
+  }
+}
