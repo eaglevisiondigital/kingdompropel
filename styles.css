@@ -1828,3 +1828,58 @@ html,body{max-width:100%;overflow-x:hidden}
 
 @media(max-width:900px){.savings-teaser-shell,.giving-hero-grid,.premium-calculator,.advantage-grid{grid-template-columns:1fr}.savings-teaser-shell{padding:30px}.giving-hero-panel{padding:30px}.discount-tiers{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.propel-savings-teaser,.savings-full-section,.propel-advantage-section{padding:72px 0}.savings-teaser-shell{padding:22px;border-radius:24px}.savings-teaser-copy h2,.calc-section-heading h2,.advantage-copy h2{font-size:39px}.calc-topline{align-items:flex-start;flex-direction:column}.calc-topline strong{font-size:35px}.compact-result-grid,.calculator-results,.advantage-results,.discount-tiers{grid-template-columns:1fr}.calculator-control-panel,.calculator-results,.advantage-calculator{padding:22px}.calculator-results article.annual,.advantage-results .first-year{grid-column:auto}.milestone-track span:nth-child(2),.milestone-track span:nth-child(4),.milestone-track span:nth-child(6){display:none}.compact-actions .btn{padding:0 12px;font-size:12px}.giving-mini-flow{font-size:10px;padding:13px;gap:5px}.giving-hero-panel>strong{font-size:45px}}
+
+/* V62 — readability + partner framing + lighter ministry comparison cards */
+
+/* Partner platform preview: keep the phone fully framed and the portrait truly circular */
+.partner-launch-shell{overflow:visible}
+.partner-preview{min-height:455px;padding-right:34px;padding-bottom:24px;align-items:center}
+.partner-launch-shell .partner-phone{right:16px!important;bottom:20px!important;width:162px!important;height:338px!important;overflow:hidden!important}
+.partner-mobile-head{display:grid!important;grid-template-columns:46px 1fr!important;gap:10px!important;align-items:center!important}
+.partner-mobile-head .partner-avatar{width:46px!important;height:46px!important;min-width:46px!important;border-radius:50%!important;overflow:hidden!important;padding:0!important;background:#0b1721!important}
+.partner-mobile-head .partner-avatar img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:50% 24%!important;border-radius:50%!important;transform:none!important;margin:0!important}
+.partner-mobile-head small{font-size:8px!important;line-height:1.2!important}
+.partner-mobile-head b{font-size:11px!important;line-height:1.12!important;margin-top:2px!important}
+
+/* Outcome stack: white/light cards inside the thin outline for maximum readability */
+.outcome-stack{border-top:0;display:grid;gap:14px}
+.outcome-item{grid-template-columns:58px 1fr;gap:20px;padding:22px 24px;margin:0;border:1px solid rgba(205,166,107,.48);border-radius:18px;background:linear-gradient(145deg,#fffdf8,#f5eee2);box-shadow:0 14px 34px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.86)}
+.outcome-item>b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;padding:0;color:#9d7138;background:#f4ead9;border:1px solid rgba(185,139,74,.38);font-size:12px}
+.outcome-item strong{color:#2a2118;font-size:21px;margin-bottom:6px}
+.outcome-item span{color:#665b4d;font-size:14px;line-height:1.48}
+
+/* Ministry-first approved visual: restore prominence */
+#story .pastor{grid-template-columns:1.14fr .86fr;gap:42px;align-items:center}
+.ministry-approved-visual{overflow:visible}
+.ministry-approved-visual img{width:120%!important;max-width:none!important;transform:translateX(-7%)!important;border-radius:30px;box-shadow:0 34px 80px rgba(15,23,42,.20)}
+
+/* Why Propel comparison: light cards on the dark field */
+.compare{gap:24px}
+.compare-box,.compare-box.propel{background:linear-gradient(145deg,#fffdf8,#f2eadc);border:1px solid rgba(203,163,106,.52);color:#241c15;box-shadow:0 18px 44px rgba(0,0,0,.18)}
+.compare-box.propel{box-shadow:0 18px 44px rgba(0,0,0,.18),inset 0 4px 0 rgba(34,197,94,.75)}
+.compare-box h3{color:#241c15}
+.compare-row{border-top:1px solid rgba(116,94,67,.18);color:#554b40}
+.compare-row b{color:#b18143;font-size:18px}
+.compare-box.propel .compare-row b{color:#12984c}
+.compare-row span{color:#554b40;font-weight:650}
+
+/* Founding momentum: light cards with dark copy while preserving Propel-green signal icons */
+.early-points span{background:linear-gradient(145deg,#fffdf8,#f1eadf)!important;border-color:rgba(203,163,106,.45)!important;box-shadow:0 14px 28px rgba(0,0,0,.13),inset 0 1px 0 rgba(255,255,255,.85)!important}
+.early-points b{color:#241d16!important;font-size:15px!important}
+.early-points small{color:#655b50!important;font-size:11.5px!important}
+.early-points i{color:#1fb95c!important;background:#eaf7ee!important;border-color:rgba(31,185,92,.32)!important;box-shadow:none!important}
+.early-points:before{background:linear-gradient(180deg,rgba(203,163,106,.08),rgba(203,163,106,.56),rgba(203,163,106,.08))!important}
+
+@media(max-width:1000px){
+  .partner-preview{min-height:430px;padding-right:12px}
+  #story .pastor{grid-template-columns:1fr}
+  .ministry-approved-visual img{width:100%!important;transform:none!important}
+}
+@media(max-width:640px){
+  .partner-launch-shell{overflow:hidden}
+  .partner-launch-shell .partner-phone{right:4px!important;bottom:8px!important;width:118px!important;height:252px!important}
+  .partner-mobile-head{grid-template-columns:32px 1fr!important}
+  .partner-mobile-head .partner-avatar{width:32px!important;height:32px!important;min-width:32px!important}
+  .outcome-item{grid-template-columns:46px 1fr;padding:18px 16px}
+  .outcome-item strong{font-size:18px}.outcome-item span{font-size:13px}
+}

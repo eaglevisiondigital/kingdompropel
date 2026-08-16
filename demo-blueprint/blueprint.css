@@ -740,3 +740,39 @@ body[data-blueprint-version="57"]{--v57:1}
 @media(max-width:860px){
  .giving-top-v61 h2{font-size:50px}.form-brand-v61 img{width:190px}.form-brand-v61 strong{font-size:26px}.giving-dash-head-v61{grid-template-columns:1fr auto}.giving-heart-v61{display:none}.giving-kpis-v61{grid-template-columns:1fr 1fr}.donor-engagement-v61{grid-template-columns:1fr}.donor-alert-v61{border-right:0;border-bottom:1px solid rgba(203,163,106,.15);padding:10px 0}.journey-intro-v61 h2{font-size:52px}.care-flow-v61{grid-template-columns:1fr}.care-flow-v61:before,.care-flow-v61>i{display:none}.journey-momentum-v61{grid-template-columns:1fr 1fr}.journey-momentum-v61 i{display:none}.care-cards-v61{grid-template-columns:1fr}.journey-close-v61{flex-wrap:wrap;gap:10px;text-align:center}
 }
+
+/* V62 — Giving readability and full-width donor-engagement treatment */
+.giving-grid-v61{grid-template-columns:.55fr 1.45fr;gap:24px;align-items:start}
+.giving-form-v61{align-self:start;min-height:0;height:auto;padding:26px 24px 22px}
+.form-brand-v61{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;align-items:start!important}
+.form-brand-v61 img{width:210px!important;height:58px!important;object-fit:contain!important;object-position:left center!important;margin:0!important}
+.form-brand-v61 strong{margin:0!important;font-size:28px!important;line-height:1!important;color:#2b2017!important;white-space:normal!important}
+.giving-form-v61 .amounts{margin:16px 0 18px}
+.giving-form-v61 label{margin-top:13px}
+.giving-form-v61>small{display:block;margin-top:12px;line-height:1.35}
+
+/* Let the dashboard own the visual width; donor care becomes a full-width closeout band */
+.giving-right-v61{display:contents}
+.giving-dashboard-v61{grid-column:2;grid-row:1;min-height:0;padding:28px 30px 24px}
+.donor-engagement-v61{grid-column:1/-1;grid-row:2;margin-top:0;padding:18px 20px;grid-template-columns:1.25fr repeat(4,1fr);gap:0}
+.donor-intro-v61{padding-right:20px}
+.donor-intro-v61 b{font-size:11px;letter-spacing:.13em}
+.donor-intro-v61 span{font-size:9px;line-height:1.45}
+.donor-alert-v61{padding:2px 16px}
+.donor-alert-v61 b{font-size:9px;line-height:1.25}
+.donor-alert-v61 small{font-size:7.7px;line-height:1.35}
+.giving-kpis-v61 span{padding:14px 13px}
+.giving-kpis-v61 b{font-size:21px}.giving-kpis-v61 small{font-size:8.5px}
+.trend-line-v61{margin-top:10px}
+
+@media(max-width:1180px){
+  .giving-grid-v61{grid-template-columns:1fr}
+  .giving-right-v61{display:grid;gap:14px}
+  .giving-dashboard-v61,.donor-engagement-v61{grid-column:auto;grid-row:auto}
+  .donor-engagement-v61{grid-template-columns:1fr 1fr}
+  .donor-intro-v61{grid-column:1/-1;border-right:0;border-bottom:1px solid rgba(203,163,106,.2);padding:0 0 12px}
+}
+@media(max-width:560px){
+  .form-brand-v61 img{width:180px!important}.form-brand-v61 strong{font-size:24px!important}
+  .donor-engagement-v61{grid-template-columns:1fr}.donor-intro-v61{grid-column:auto}
+}
