@@ -672,3 +672,22 @@ body[data-blueprint-version="57"]{--v57:1}
  #website .website-tour-viewport{height:484px!important;overflow-y:auto!important}
  #website .website-tour-image{animation:none!important;transform:none!important}
 }
+
+/* V58 — approved Champion Life mobile website showcase */
+.approved-mobile-showcase{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:0;
+  overflow:visible;
+}
+.approved-mobile-phone-art{
+  display:block;
+  width:min(100%, 560px);
+  max-height:84vh;
+  object-fit:contain;
+  filter:drop-shadow(0 28px 34px rgba(37,27,15,.18));
+}
+@media (max-width: 980px){
+  .approved-mobile-phone-art{width:min(82vw,520px);max-height:none;}
+}
