@@ -42,3 +42,6 @@
     if (next !== current) { e.preventDefault(); sections[next].scrollIntoView({behavior:'smooth'}); }
   });
 })();
+
+// V57 deployment marker — makes it easy to verify the catch-up package is live.
+window.PROPEL_BLUEPRINT_VERSION = '57-catch-up';

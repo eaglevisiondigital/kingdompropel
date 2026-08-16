@@ -8,9 +8,9 @@
   <title>Propel Digital Ministry Blueprint — Foundations Church</title>
   <meta name="description" content="Private self-guided Propel Digital Ministry Blueprint demonstrating one connected ministry ecosystem through Foundations Church.">
   <link rel="icon" href="/assets/propel-icon-32.png">
-  <link rel="stylesheet" href="/demo-blueprint/blueprint.css">
+  <link rel="stylesheet" href="/demo-blueprint/blueprint.css?v=57">
 </head>
-<body>
+<body data-blueprint-version="57">
   <div class="bp-progress" aria-hidden="true"><span id="progressBar"></span></div>
   <button class="bp-menu" id="menuToggle" aria-label="Open blueprint navigation">☰</button>
 
@@ -122,12 +122,12 @@
           <p class="lead small">The challenge is rarely a lack of software. It is the friction created when every important ministry moment lives somewhere different.</p>
           <div class="problem-quote">Every additional disconnected tool creates another place for a person—or a follow-up—to fall through the cracks.</div>
         </div>
-        <div class="stack-list reveal delay-1">
-          <article><b>01</b><span>Separate public website + forms</span></article>
-          <article><b>02</b><span>Giving disconnected from people + care</span></article>
-          <article><b>03</b><span>Guest follow-up living in spreadsheets + texts</span></article>
-          <article><b>04</b><span>Groups, volunteers + events in different systems</span></article>
-          <article><b>05</b><span>Leaders without one clear view of ministry health</span></article>
+        <div class="stack-list reveal delay-1 problem-cards-v57">
+          <article><b>01</b><span class="problem-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.3 4.4 6.3 4.4 9S15 17.7 12 21M12 3C9 6.3 7.6 9.3 7.6 12S9 17.7 12 21"/></svg></span><span>Separate public website + forms</span></article>
+          <article><b>02</b><span class="problem-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 14.5l-2 2a3.5 3.5 0 01-5-5l3-3a3.5 3.5 0 015 0M14.5 9.5l2-2a3.5 3.5 0 015 5l-3 3a3.5 3.5 0 01-5 0M8 16l8-8"/><path d="M4 4l2 2M18 18l2 2M20 4l-2 2M4 20l2-2"/></svg></span><span>Giving disconnected from people + care</span></article>
+          <article><b>03</b><span class="problem-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="14" height="15" rx="1.5"/><path d="M3 9h14M8 4v15M3 14h14"/><circle cx="18.5" cy="17.5" r="4"/><path d="M17 16l3 3M20 16l-3 3"/></svg></span><span>Guest follow-up living in spreadsheets + texts</span></article>
+          <article><b>04</b><span class="problem-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.3"/><circle cx="19" cy="9" r="2.3"/><path d="M7 20v-3a5 5 0 0110 0v3M1.5 20v-2.2A4 4 0 016 14M22.5 20v-2.2A4 4 0 0018 14"/></svg></span><span>Groups, volunteers + events in different systems</span></article>
+          <article><b>05</b><span class="problem-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10h3v10M10 20V5h3v15M16 20v-7h3v7"/><circle cx="18.5" cy="6.5" r="4"/><path d="M17 5l3 3M20 5l-3 3"/></svg></span><span>Leaders without one clear view of ministry health</span></article>
         </div>
       </div><div class="slide-no">03 / 29</div>
     </section>
@@ -234,14 +234,16 @@
 
     <section class="bp-slide bp-light" id="website" data-title="Digital Front Door">
       <div class="slide-inner mockup-split">
-        <div class="reveal"><p class="eyebrow">YOUR DIGITAL FRONT DOOR</p><h2>First impressions <em>shape every next step.</em></h2><p class="lead small">Before someone meets a pastor, walks through the lobby or hears the message, they experience the church online.</p><div class="number-lines"><span><b>01</b> Who are you?</span><span><b>02</b> What should I expect?</span><span><b>03</b> How do I take my next step?</span></div><blockquote class="green-quote">The website is not designed merely to impress. It is designed to invite.</blockquote></div>
-        <div class="browser premium-browser reveal delay-1">
-          <div class="browser-top"><i></i><i></i><i></i><span>foundations.church</span></div>
-          <div class="site-page">
-            <header><img src="/demo-blueprint/assets/foundations/foundations-horizontal-light-approved.png" alt=""><nav>VISIT&nbsp;&nbsp; WHO WE ARE&nbsp;&nbsp; MINISTRIES&nbsp;&nbsp; WATCH&nbsp;&nbsp; GIVE</nav><button>I'M NEW</button></header>
-            <div class="site-hero"><div><small>WELCOME TO FOUNDATIONS</small><h3>Faith for real life.<br><em>People for the journey.</em></h3><p>A church where people can know God, find community and build a faith that lasts.</p><button>PLAN YOUR VISIT</button><button class="outline">WATCH ONLINE</button></div><div class="hero-image"><span>THIS SUNDAY · 10:30 AM</span></div></div>
-            <div class="site-path"><div><b>01</b><strong>Visit</strong><span>Know what to expect</span></div><div><b>02</b><strong>Connect</strong><span>Find your people</span></div><div><b>03</b><strong>Grow</strong><span>Take your next step</span></div></div>
+        <div class="reveal"><p class="eyebrow">YOUR DIGITAL FRONT DOOR</p><h2>First impressions <em>shape every next step.</em></h2><p class="lead small">Before someone meets a pastor, walks through the lobby or hears the message, they experience the church online.</p><div class="number-lines"><span><b>01</b> Who are you?</span><span><b>02</b> What should I expect?</span><span><b>03</b> How do I take my next step?</span></div><blockquote class="foundations-quote">The website is not designed merely to impress. It is designed to invite.</blockquote></div>
+        <div class="website-demo-wrap reveal delay-1">
+          <div class="website-demo-label"><span>FOUNDATIONS.CHURCH</span><b>FULL WEBSITE EXPERIENCE</b></div>
+          <div class="browser premium-browser website-tour-browser" aria-label="Scrolling Foundations Church website concept">
+            <div class="browser-top"><i></i><i></i><i></i><span>foundations.church</span><em>LIVE CONCEPT</em></div>
+            <div class="website-tour-viewport" tabindex="0" aria-label="Foundations Church website preview. Hover to pause the automatic scroll or use touch to inspect on mobile.">
+              <img class="website-tour-image" src="/demo-blueprint/assets/foundations/foundations-website-full.png?v=57" alt="Full Foundations Church homepage concept">
+            </div>
           </div>
+          <div class="website-tour-caption"><span>FULL DIGITAL FRONT DOOR</span><i></i><span>HOVER TO PAUSE</span><i></i><span>DESIGNED AROUND THE MINISTRY JOURNEY</span></div>
         </div>
       </div><div class="slide-no">06 / 29</div>
     </section>
@@ -370,48 +372,86 @@
       </div><div class="slide-no">23 / 29</div>
     </section>
 
-    <section class="bp-slide bp-cream" id="connect" data-title="Physical → Digital">
-      <div class="slide-inner connect-layout">
-        <div class="reveal"><p class="eyebrow goldtext">PHYSICAL → DIGITAL MINISTRY</p><h2>Turn every physical ministry moment into a <em>connected next step.</em></h2><p class="lead small">NFC, QR and contextual links can connect the physical church environment to the exact digital action someone needs—without forcing them to hunt through a menu.</p><div class="connect-list"><span><b>Seat / worship</b> sermon notes + prayer + giving</span><span><b>Kids area</b> family information + check-in</span><span><b>Outreach event</b> connect + response + follow-up</span><span><b>Mission display</b> partner updates + giving</span><span><b>Lobby signage</b> Growth Track + groups + serving</span></div></div>
-        <div class="tap-scene reveal delay-1"><div class="nfc-card"><img src="/demo-blueprint/assets/foundations/foundations-horizontal-light-approved.png" alt=""><span class="tap-symbol">)))</span><small>TAP OR SCAN</small><h3>Your next step starts here.</h3><div class="nfc-actions"><span>Connect</span><span>Prayer</span><span>Give</span><span>Events</span></div></div><div class="tap-phone iphone"><div class="notch"></div><div class="status">9:41 <span>●●●</span></div><div class="tap-result"><small>FOUNDATIONS CHURCH</small><h3>Welcome.</h3><p>You're at Sunday Worship. What would help you right now?</p><button>Open Sermon Notes</button><button>Submit Prayer Request</button><button>Give Today</button><button>I'm New Here</button></div></div></div>
+    <section class="bp-slide bp-foundations-cream physical-premium" id="connect" data-title="Physical → Digital">
+      <div class="slide-inner physical-premium-layout">
+        <div class="physical-copy reveal">
+          <p class="eyebrow foundations-gold">PHYSICAL → DIGITAL MINISTRY</p>
+          <h2>Turn every physical ministry moment into a <em>connected next step.</em></h2>
+          <p class="lead small">NFC, QR and contextual links can connect the physical church environment to the exact digital action someone needs—without forcing them to hunt through a menu.</p>
+          <div class="physical-usecases">
+            <article><span class="use-icon">◉</span><div><b>SEAT / WORSHIP</b><p>Sermon notes · prayer · giving</p></div></article>
+            <article><span class="use-icon">✦</span><div><b>KIDS AREA</b><p>Family information · check-in</p></div></article>
+          </div>
+        </div>
+        <div class="physical-scene reveal delay-1">
+          <div class="physical-card">
+            <img src="/demo-blueprint/assets/foundations/foundations-horizontal-transparent-approved.png" alt="Foundations Church">
+            <div class="tap-rings">)))</div><small>TAP TO CONNECT</small><h3>Your next step starts here.</h3>
+            <div class="physical-card-actions"><span>Connect</span><span>Prayer</span><span>Give</span><span>Events</span></div>
+          </div>
+          <div class="physical-phone iphone"><div class="notch"></div><div class="status">9:41 <span>●●●</span></div><div class="physical-phone-inner">
+            <img src="/demo-blueprint/assets/foundations/foundations-horizontal-transparent-approved.png" alt="Foundations Church"><small>WELCOME TO FOUNDATIONS CHURCH</small><h3>Welcome.</h3><p>You're at Sunday Worship. What would help you right now?</p>
+            <button>Open Sermon Notes</button><button>Submit Prayer Request</button><button>Give Today</button><button>I'm New Here</button><button>Upcoming Events</button>
+          </div></div>
+          <div class="physical-watch"><span>FOUNDATIONS</span><b>Sunday Worship</b><small>Tap for next step</small></div>
+          <div class="physical-qr"><div class="qr-grid">▦</div><small>SCAN TO<br>CONNECT</small></div>
+        </div>
+        <div class="physical-benefits reveal delay-2"><article><b>SEAMLESSLY CONNECT</b><span>Bridge physical moments to digital action.</span></article><article><b>REMOVE FRICTION</b><span>One tap or scan to engage—no app required.</span></article><article><b>RELEVANT & CONTEXTUAL</b><span>Right person. Right moment. Right next step.</span></article><article><b>MEASURABLE IMPACT</b><span>Track engagement and ministry outcomes.</span></article></div>
       </div><div class="slide-no">24 / 29</div>
     </section>
 
-    <section class="bp-slide bp-dark" id="ai" data-title="Ask Propel">
-      <div class="slide-inner ai-layout">
-        <div class="reveal"><p class="eyebrow gold">ASK PROPEL · FUTURE ASSISTANCE</p><h2>Trusted guidance.<br><em>Whenever it is needed.</em></h2><p class="lead small">A future self-guided assistant can answer approved questions, surface ministry resources and help people navigate the platform—without inventing answers or replacing a real person when a conversation is needed.</p><div class="tag-cloud"><span>Can members see giving history?</span><span>Can volunteers see when they serve?</span><span>Can we use this for Growth Track?</span><span>Can families check in children?</span><span>Can groups communicate?</span></div><blockquote>AI should remove friction—not manufacture certainty.</blockquote></div>
-        <div class="ai-phone reveal delay-1"><header><img src="/demo-blueprint/assets/propel-mark-approved.png" alt=""><b>Ask Propel</b><span>⌕</span></header><div class="ask-intro"><h3>How can we help you today?</h3><p>Choose a question or ask in your own words.</p></div><h4>Try asking me…</h4><button>Can our volunteers see their schedule? <span>›</span></button><button>How does giving history work? <span>›</span></button><button>Can I register my family for an event? <span>›</span></button><button>Show me our next Growth Track step <span>›</span></button><button>How does kids check-in work? <span>›</span></button><div class="ask-box">Ask anything… <span>↗</span></div></div>
+    <section class="bp-slide bp-foundations-cream ai-premium" id="ai" data-title="Ask Propel">
+      <div class="slide-inner ai-premium-layout">
+        <div class="reveal ai-premium-copy"><p class="eyebrow foundations-gold">ASK PROPEL · FUTURE ASSISTANCE</p><h2>Trusted guidance.<br><em>Whenever it is needed.</em></h2><p class="lead small">A future self-guided assistant can answer approved questions, surface ministry resources and help people navigate the platform—without inventing answers or replacing a real person when a conversation is needed.</p><div class="tag-cloud premium-tags"><span>Can members see giving history?</span><span>Can volunteers see when they serve?</span><span>Can we use this for Growth Track?</span><span>Can families check in children?</span><span>Can groups communicate?</span></div><blockquote>AI should remove friction—not manufacture certainty.</blockquote></div>
+        <div class="ai-console reveal delay-1"><header><img src="/demo-blueprint/assets/propel-mark-approved.png" alt=""><b>Ask Propel</b><span>✦</span></header><div class="ask-intro"><h3>How can we help you today?</h3><p>Choose a question or ask in your own words.</p></div><h4>Try asking me…</h4><button>Can our volunteers see their schedule? <span>›</span></button><button>How does giving history work? <span>›</span></button><button>Can I register my family for an event? <span>›</span></button><button>Show me our next Growth Track step <span>›</span></button><button>How does kids check-in work? <span>›</span></button><div class="ask-box">Ask anything… <span>↗</span></div></div>
       </div><div class="slide-no">25 / 29</div>
     </section>
 
-    <section class="bp-slide bp-light" id="difference" data-title="Why Propel">
-      <div class="slide-inner difference-layout">
-        <div class="reveal"><p class="eyebrow">WHY PROPEL</p><h2>We do not build disconnected tools.<br><em>We architect ministry momentum.</em></h2></div>
-        <div class="difference-cards reveal delay-1"><article><b>01</b><h3>Ministry first</h3><p>Every decision begins with people, relationships and ministry outcomes—not software for software's sake.</p></article><article><b>02</b><h3>One connected vision</h3><p>Website, app, giving, communication and operations are designed as one journey instead of separate products.</p></article><article><b>03</b><h3>Premium by design</h3><p>Custom public experiences, polished interfaces and a unified design language give churches technology they are proud to use.</p></article><article><b>04</b><h3>Built to evolve</h3><p>The goal is not merely to launch technology. It is to create a foundation that can grow with the mission.</p></article></div>
-        <div class="difference-banner"><span>People are the hero.</span><span>Ministry is the mission.</span><span>Technology makes it possible at scale.</span></div>
+    <section class="bp-slide bp-foundations-cream difference-premium" id="difference" data-title="Why Propel">
+      <div class="slide-inner difference-premium-layout">
+        <div class="reveal"><p class="eyebrow foundations-gold">WHY PROPEL</p><h2>We do not build disconnected tools.<br><em>We architect ministry momentum.</em></h2></div>
+        <div class="difference-premium-cards reveal delay-1">
+          <article><div class="difference-icon">◎</div><b>01</b><h3>Ministry first</h3><p>Every decision begins with people, relationships and ministry outcomes—not software for software's sake.</p></article>
+          <article><div class="difference-icon">⌘</div><b>02</b><h3>One connected vision</h3><p>Website, app, giving, communication and operations are designed as one journey instead of separate products.</p></article>
+          <article><div class="difference-icon">◇</div><b>03</b><h3>Premium by design</h3><p>Custom public experiences, polished interfaces and a unified design language give churches technology they are proud to use.</p></article>
+          <article><div class="difference-icon">↗</div><b>04</b><h3>Built to evolve</h3><p>The goal is not merely to launch technology. It is to create a foundation that can grow with the mission.</p></article>
+        </div>
+        <div class="difference-premium-banner reveal delay-2"><span>People are the <em>hero.</em></span><i></i><span>Ministry is the <em>mission.</em></span><i></i><span>Technology makes it <em>possible at scale.</em></span></div>
       </div><div class="slide-no">26 / 29</div>
     </section>
 
-    <section class="bp-slide bp-cream" id="roadmap" data-title="Implementation">
-      <div class="slide-inner roadmap-layout">
-        <div class="reveal"><p class="eyebrow goldtext">IMPLEMENTATION PHILOSOPHY</p><h2>Start with what matters now.<br><em>Build for what comes next.</em></h2><p class="lead small">Every church is different. The implementation should reflect the ministry's priorities, current systems, team capacity and growth path—not force every church into the same package.</p></div>
-        <div class="roadmap reveal delay-1"><div><b>01</b><strong>Discover</strong><span>Vision · current systems · priorities · pain points</span></div><i>→</i><div><b>02</b><strong>Design</strong><span>Brand experience · workflows · ministry journey</span></div><i>→</i><div><b>03</b><strong>Build</strong><span>Website · app · platform · integrations · data</span></div><i>→</i><div><b>04</b><strong>Launch</strong><span>Training · migration · communication · rollout</span></div><i>→</i><div><b>05</b><strong>Grow</strong><span>Measure · refine · expand · support</span></div></div>
-        <div class="roadmap-note">A church can begin with the pieces it needs and expand into the broader Propel ecosystem over time.</div>
+    <section class="bp-slide bp-foundations-cream roadmap-premium" id="roadmap" data-title="Implementation">
+      <div class="slide-inner roadmap-premium-layout">
+        <div class="reveal roadmap-premium-head"><p class="eyebrow foundations-gold">IMPLEMENTATION PHILOSOPHY</p><h2>Start with what matters now.<br><em>Build for what comes next.</em></h2><p class="lead small">Every church is different. The implementation should reflect the ministry's priorities, current systems, team capacity and growth path—not force every church into the same package.</p></div>
+        <div class="roadmap-line reveal delay-1"><span></span><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="roadmap-premium-grid reveal delay-1">
+          <article><b>01</b><div class="road-icon">⌘</div><h3>Discover</h3><p>Vision · current systems · priorities · pain points</p></article>
+          <article><b>02</b><div class="road-icon">✎</div><h3>Design</h3><p>Brand experience · workflows · ministry journey</p></article>
+          <article><b>03</b><div class="road-icon">&lt;/&gt;</div><h3>Build</h3><p>Website · app · platform · integrations · data</p></article>
+          <article><b>04</b><div class="road-icon">◇</div><h3>Launch</h3><p>Training · migration · communication · rollout</p></article>
+          <article><b>05</b><div class="road-icon">↗</div><h3>Grow</h3><p>Measure · refine · expand · support</p></article>
+        </div>
+        <div class="roadmap-premium-note reveal delay-2"><img src="/demo-blueprint/assets/propel-mark-approved.png" alt=""><span>A church can begin with the pieces it needs and expand into the broader Propel ecosystem over time.</span></div>
       </div><div class="slide-no">27 / 29</div>
     </section>
 
-    <section class="bp-slide bp-deep" id="recommendation" data-title="Recommendation">
-      <div class="slide-inner recommendation-layout">
-        <div class="chapter-number">28</div>
-        <div class="reveal"><p class="eyebrow gold">EXECUTIVE RECOMMENDATION</p><h2>Build one unified <em>Digital Ministry Ecosystem.</em></h2><p class="lead small">Do not expand through another collection of independent systems. Build a connected environment where every ministry interaction strengthens relationships, simplifies next steps and gives leaders the visibility they need to care well.</p><div class="recommendation-grid"><span>Stronger guest experience</span><span>Greater ministry capacity</span><span>Deeper partner engagement</span><span>More consistent follow-up</span><span>Clearer ministry insight</span><span>Distinctive digital experience</span></div><hr><blockquote>Technology should remain nearly invisible. The mission should always remain visible.</blockquote></div>
+    <section class="bp-slide bp-foundations-dark recommendation-premium" id="recommendation" data-title="Recommendation">
+      <div class="recommendation-ambient"></div>
+      <div class="slide-inner recommendation-premium-layout">
+        <div class="recommendation-number">28</div>
+        <div class="reveal recommendation-main"><p class="eyebrow foundations-gold">EXECUTIVE RECOMMENDATION</p><h2>Build one unified <em>Digital Ministry Ecosystem.</em></h2><p class="lead small">Do not expand through another collection of independent systems. Build a connected environment where every ministry interaction strengthens relationships, simplifies next steps and gives leaders the visibility they need to care well.</p>
+          <div class="recommendation-outcomes"><span>Stronger guest experience</span><span>Greater ministry capacity</span><span>Deeper partner engagement</span><span>More consistent follow-up</span><span>Clearer ministry insight</span><span>Distinctive digital experience</span></div>
+          <div class="recommendation-principles"><article><b>ONE PEOPLE RECORD</b><p>Know the whole person across giving, groups, serving, care and next steps.</p></article><article><b>ONE MINISTRY JOURNEY</b><p>Every touchpoint can point toward a meaningful next step.</p></article><article><b>ONE CONNECTED VIEW</b><p>Leaders see enough context to care well without juggling disconnected systems.</p></article></div>
+          <blockquote>Technology should remain nearly invisible. The mission should always remain visible.</blockquote>
+        </div>
       </div><div class="slide-no">28 / 29</div>
     </section>
 
     <section class="bp-slide bp-future" id="future" data-title="The Future">
       <div class="future-glow"></div>
       <div class="slide-inner future-inner reveal">
-        <img class="future-propel" src="/demo-blueprint/assets/propel-logo-approved.png" alt="Propel by Eagle Vision">
-        <img class="future-foundations" src="/demo-blueprint/assets/foundations/foundations-horizontal-light-approved.png" alt="Foundations Church">
+        <img class="future-propel" src="/demo-blueprint/assets/propel-logo-lightpage-approved.png" alt="Propel by Eagle Vision">
+        <img class="future-foundations" src="/demo-blueprint/assets/foundations/foundations-horizontal-transparent-approved.png" alt="Foundations Church">
         <p class="eyebrow gold">THE FUTURE WE SEE</p>
         <h2>One ministry.<br><em>One mission.</em><br>Every person connected.</h2>
         <p class="future-copy">Helping churches welcome people well. Helping families belong. Helping volunteers serve with clarity. Helping partners see their impact. Helping leaders care for people without carrying the weight of disconnected technology.</p>
@@ -421,6 +461,6 @@
     </section>
   </main>
 
-  <script src="/demo-blueprint/blueprint.js"></script>
+  <script src="/demo-blueprint/blueprint.js?v=57"></script>
 </body>
 </html>
