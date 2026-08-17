@@ -889,3 +889,13 @@ body[data-blueprint-version="57"]{--v57:1}
   #giving .donor-alert-v61{border-right:0;border-bottom:1px solid rgba(203,163,106,.18);padding:12px 0}
   #guests .journey-close-v61{font-size:8.5px;letter-spacing:.1em}
 }
+
+/* V65 — approved Partner Platform mobile mockup */
+.partner-approved-mobile{
+  display:flex;align-items:center;justify-content:center;
+  min-height:0;padding:0 20px 14px;
+}
+.partner-approved-mobile img{
+  display:block;width:auto;height:auto;max-height:520px;max-width:100%;
+  object-fit:contain;filter:drop-shadow(0 24px 34px rgba(0,0,0,.24));
+}
