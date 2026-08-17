@@ -1911,3 +1911,68 @@ html,body{max-width:100%;overflow-x:hidden}
 .propel-savings-teaser .savings-usecases{gap:10px}
 .propel-savings-teaser .savings-usecases span{padding:10px 14px;border-color:#d6e2db;background:#fff;color:#344653;font-size:12px;box-shadow:0 3px 10px rgba(8,31,20,.035)}
 @media(max-width:640px){.website-device-pair .website-desktop{width:96%!important;left:2%}.website-device-pair .website-mobile{width:28%!important}.hub-device-pair .hub-mobile{width:27%!important}}
+
+/* V69 FIXES ONLY — readability, calculator CTA contrast, partner custom-brand badge */
+/* Connected-giving capability chips: larger and balanced across the full copy width. */
+.propel-savings-teaser .savings-usecases{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  width:100%!important;
+  gap:10px 12px!important;
+  margin-top:24px!important;
+}
+.propel-savings-teaser .savings-usecases span{
+  min-height:44px!important;
+  padding:11px 12px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  font-size:13px!important;
+  line-height:1.15!important;
+  font-weight:750!important;
+  white-space:normal!important;
+}
+/* Secondary calculator action: clear white button with Propel-green text. */
+.propel-savings-teaser .compact-actions .btn-secondary{
+  background:#fff!important;
+  color:#16b957!important;
+  border:1px solid rgba(22,185,87,.45)!important;
+  box-shadow:0 7px 18px rgba(7,37,21,.08)!important;
+}
+.propel-savings-teaser .compact-actions .btn-secondary:hover{
+  background:#f4fff8!important;
+  color:#0d9c47!important;
+  border-color:#16b957!important;
+}
+/* Keep the disclaimer readable against the dark calculator. */
+.propel-savings-teaser .calc-disclaimer{color:#96aaa1!important;font-size:11px!important;line-height:1.45!important}
+/* Partner Platform custom-brand callout. */
+.partner-preview-approved{position:relative!important;overflow:visible!important}
+.partner-custom-badge{
+  position:absolute;right:4%;top:10%;z-index:6;
+  display:flex;align-items:center;gap:10px;
+  padding:10px 16px 10px 10px;
+  border:1.5px solid #20cf68;border-radius:999px;
+  background:rgba(255,255,255,.98);
+  color:#08131d;
+  box-shadow:0 15px 35px rgba(0,0,0,.22),0 0 0 4px rgba(32,207,104,.05);
+  white-space:nowrap;
+}
+.partner-custom-badge-icon{
+  width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  background:#07131c;color:#20cf68;font-size:18px;font-weight:900;
+  box-shadow:inset 0 0 0 1px rgba(32,207,104,.38);
+}
+.partner-custom-badge>span:last-child{display:grid;line-height:1.05}
+.partner-custom-badge b{font-size:11px;letter-spacing:.08em;color:#08131d}
+.partner-custom-badge small{font-size:10px;color:#50606a;margin-top:3px}
+@media(max-width:900px){
+  .propel-savings-teaser .savings-usecases{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .partner-custom-badge{right:1%;top:4%;transform:scale(.92);transform-origin:top right}
+}
+@media(max-width:640px){
+  .propel-savings-teaser .savings-usecases{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .propel-savings-teaser .savings-usecases span{font-size:12px!important;min-height:42px!important}
+  .partner-custom-badge{position:relative;right:auto;top:auto;display:inline-flex;margin:0 auto 14px;transform:none}
+}
