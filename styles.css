@@ -1883,3 +1883,17 @@ html,body{max-width:100%;overflow-x:hidden}
   .outcome-item{grid-template-columns:46px 1fr;padding:18px 16px}
   .outcome-item strong{font-size:18px}.outcome-item span{font-size:13px}
 }
+
+/* V65 — approved Partner Platform mockup */
+.partner-preview-approved{
+  display:flex;align-items:center;justify-content:center;
+  min-height:560px;padding:10px 0;background:transparent;
+}
+.partner-preview-approved img{
+  display:block;max-width:100%;width:auto;max-height:590px;height:auto;
+  object-fit:contain;filter:drop-shadow(0 24px 38px rgba(0,0,0,.28));
+}
+@media(max-width:900px){
+  .partner-preview-approved{min-height:0;padding:20px 0}
+  .partner-preview-approved img{max-height:720px}
+}
