@@ -2650,3 +2650,63 @@ header{
 .entitlement-flow b{font-size:12px}.entitlement-flow small{font-size:10px;line-height:1.35}.entitlement-flow i{font-size:25px;color:#44e282}
 @media(max-width:980px){.partner-value-grid article{min-height:360px}.partner-page-grid{grid-template-columns:1fr 1fr}.partner-page-grid article{min-height:300px}}
 @media(max-width:700px){.partner-page-grid{grid-template-columns:1fr}.partner-value-grid article{min-height:auto;padding-bottom:28px}.partner-value-outcome{position:static;margin-top:22px}.partner-page-grid article{min-height:auto}.partner-page-section .section-head h2{font-size:clamp(42px,12vw,62px)}}
+
+
+/* V81 — Partner benefit journey premium visual upgrade */
+.partner-entitlement-banner{
+  position:relative;
+  overflow:hidden;
+  padding:42px 42px 40px;
+  border:1px solid rgba(41,214,103,.30);
+  background:
+    radial-gradient(circle at 78% 12%,rgba(39,219,104,.18),transparent 29%),
+    radial-gradient(circle at 18% 100%,rgba(39,219,104,.08),transparent 35%),
+    linear-gradient(132deg,#061822 0%,#082521 55%,#0a2f28 100%);
+  box-shadow:0 28px 70px rgba(3,21,18,.22),inset 0 1px 0 rgba(255,255,255,.035)
+}
+.partner-entitlement-banner:after{
+  content:"";position:absolute;right:-110px;top:-130px;width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(48,225,113,.08);box-shadow:0 0 0 46px rgba(48,225,113,.025),0 0 0 92px rgba(48,225,113,.018);pointer-events:none
+}
+.partner-entitlement-banner h3{font-size:34px;line-height:1.05;max-width:430px;margin-top:13px}
+.partner-entitlement-banner p{font-size:16px;line-height:1.66;max-width:510px;color:#c1cfd5}
+.entitlement-flow-premium{position:relative;gap:10px;padding:10px 0;isolation:isolate}
+.entitlement-flow-premium:before{
+  content:"";position:absolute;left:7%;right:7%;top:50%;height:2px;transform:translateY(-50%);
+  background:linear-gradient(90deg,rgba(51,224,113,.18),rgba(51,224,113,.72),rgba(51,224,113,.18));z-index:-1
+}
+.entitlement-flow-premium .entitlement-step{
+  position:relative;min-height:170px;padding:19px 15px 16px;border-radius:22px;
+  border:1px solid rgba(71,229,126,.30);
+  background:linear-gradient(155deg,rgba(255,255,255,.085),rgba(255,255,255,.028));
+  box-shadow:0 14px 34px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.055);
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;backdrop-filter:blur(4px)
+}
+.entitlement-flow-premium .entitlement-step:after{
+  content:"";position:absolute;left:16px;right:16px;bottom:47px;height:1px;background:rgba(255,255,255,.09)
+}
+.entitlement-flow-premium .entitlement-number{
+  position:absolute;right:13px;top:12px;font-style:normal;font-size:10px;font-weight:900;letter-spacing:.14em;color:rgba(129,245,169,.72)
+}
+.entitlement-flow-premium .entitlement-icon{
+  width:42px;height:42px;border-radius:13px;display:grid;place-items:center;margin-bottom:15px;
+  background:linear-gradient(145deg,#1ee36a,#62efa0);color:#062016;font-size:20px;font-weight:900;
+  box-shadow:0 10px 24px rgba(34,211,100,.18),inset 0 1px 0 rgba(255,255,255,.5)
+}
+.entitlement-flow-premium b{font-size:13px;letter-spacing:.105em;color:#67ef9a;line-height:1.2}
+.entitlement-flow-premium small{display:block;margin-top:7px;min-height:43px;font-size:10px;line-height:1.45;color:#d0dce1}
+.entitlement-flow-premium strong{display:block;margin-top:auto;padding-top:12px;font-size:9px;letter-spacing:.15em;color:#fff}
+.entitlement-flow-premium .entitlement-arrow{
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;align-self:center;
+  background:#0a3026;border:1px solid rgba(75,232,128,.36);color:#4bea83;font-size:20px;font-style:normal;
+  box-shadow:0 0 0 7px rgba(20,71,52,.45)
+}
+@media(max-width:980px){
+  .entitlement-flow-premium{grid-template-columns:1fr 1fr;gap:14px}
+  .entitlement-flow-premium:before,.entitlement-flow-premium .entitlement-arrow{display:none}
+  .partner-entitlement-banner{padding:36px 30px}
+}
+@media(max-width:640px){
+  .entitlement-flow-premium{grid-template-columns:1fr}
+  .entitlement-flow-premium .entitlement-step{min-height:150px}
+}
