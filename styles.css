@@ -2563,3 +2563,158 @@ html,body{max-width:100%;overflow-x:hidden}
  .partner-entitlement-banner{padding:28px 22px}
  .partner-entitlement-banner h3{font-size:30px}
 }
+
+/* =========================================================
+   V75 — Persistent navigation + Propel Payments Advantage polish
+   + approved ministry-story Propel green correction support
+   Apply after V74.
+   ========================================================= */
+
+/* Persistent navigation: keep the full Propel header available while scrolling. */
+html{scroll-padding-top:96px}
+body{padding-top:78px}
+body>header,
+body>.site-header{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  width:100%!important;
+  z-index:5000!important;
+  background:rgba(4,10,19,.92)!important;
+  -webkit-backdrop-filter:blur(18px) saturate(135%);
+  backdrop-filter:blur(18px) saturate(135%);
+  border-bottom:1px solid rgba(255,255,255,.08)!important;
+  box-shadow:0 10px 32px rgba(2,10,7,.12);
+}
+body>header .nav,
+body>.site-header .nav{height:78px}
+@media(max-width:640px){
+  html{scroll-padding-top:82px}
+  body{padding-top:68px}
+  body>header .nav,
+  body>.site-header .nav{height:68px;min-height:68px}
+}
+
+/* Giving / Payments Advantage — clearer, more premium tier presentation. */
+.propel-advantage-section{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 8% 16%,rgba(35,201,100,.10),transparent 27%),
+    radial-gradient(circle at 92% 82%,rgba(35,201,100,.07),transparent 25%),
+    linear-gradient(180deg,#f7fbf8 0%,#eef8f1 100%)!important;
+}
+.propel-advantage-section:before{
+  content:"";
+  position:absolute;inset:0;pointer-events:none;opacity:.42;
+  background-image:linear-gradient(rgba(20,122,68,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(20,122,68,.035) 1px,transparent 1px);
+  background-size:48px 48px;
+  mask-image:linear-gradient(to bottom,black,transparent 80%);
+}
+.propel-advantage-section .container{position:relative;z-index:1}
+.advantage-copy>.eyebrow{
+  padding:11px 18px!important;
+  border:1px solid #8fdcab!important;
+  background:linear-gradient(180deg,#ebfaef,#e1f6e7)!important;
+  color:#0b7f3e!important;
+  font-weight:950!important;
+  letter-spacing:.13em!important;
+  box-shadow:0 10px 28px rgba(21,126,66,.09);
+}
+.advantage-copy h2{max-width:700px}
+.advantage-copy>p{font-size:19px!important;line-height:1.62!important;color:#516676!important}
+.discount-tiers{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:16px!important;
+  margin-top:34px!important;
+}
+.discount-tiers>span{
+  position:relative;
+  overflow:hidden;
+  min-height:112px;
+  padding:22px 22px 20px 68px!important;
+  border:1px solid #c8dfd0!important;
+  border-radius:20px!important;
+  background:linear-gradient(145deg,#ffffff 0%,#f7fcf9 100%)!important;
+  box-shadow:0 16px 36px rgba(12,63,35,.075)!important;
+  color:#526676!important;
+  font-size:14px!important;
+  font-weight:760!important;
+  line-height:1.35!important;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.discount-tiers>span:before{
+  content:"";
+  position:absolute;
+  left:20px;top:22px;
+  width:34px;height:34px;border-radius:11px;
+  background:linear-gradient(145deg,#e8f9ee,#dff5e7);
+  border:1px solid #c8ead4;
+  box-shadow:inset 0 1px 0 #fff;
+}
+.discount-tiers>span:after{
+  position:absolute;left:30px;top:26px;
+  color:#15964a;font-size:15px;font-weight:950;
+}
+.discount-tiers>span:nth-child(1):after{content:"01"}
+.discount-tiers>span:nth-child(2):after{content:"02"}
+.discount-tiers>span:nth-child(3):after{content:"03"}
+.discount-tiers>span:nth-child(4):after{content:"04"}
+.discount-tiers>span:nth-child(5):after{content:"05"}
+.discount-tiers>span:nth-child(6):after{content:"06"}
+.discount-tiers>span:hover{
+  transform:translateY(-3px);
+  border-color:#8fd7a8!important;
+  box-shadow:0 22px 48px rgba(12,63,35,.12)!important;
+}
+.discount-tiers>span b{
+  display:block!important;
+  margin-top:7px!important;
+  color:#0d2418!important;
+  font-size:20px!important;
+  line-height:1.15!important;
+  letter-spacing:-.02em;
+}
+.discount-tiers>span:nth-child(3),
+.discount-tiers>span:nth-child(4),
+.discount-tiers>span:nth-child(5){
+  background:linear-gradient(145deg,#ffffff 0%,#effaf3 100%)!important;
+}
+.discount-tiers>span:nth-child(5){
+  border-color:#9fdcaf!important;
+  box-shadow:0 18px 42px rgba(28,168,82,.11)!important;
+}
+.discount-tiers>span:nth-child(6){
+  background:linear-gradient(145deg,#09251b 0%,#0b3525 100%)!important;
+  border-color:rgba(40,201,103,.32)!important;
+  color:#c7d8cf!important;
+}
+.discount-tiers>span:nth-child(6) b{color:#fff!important}
+.discount-tiers>span:nth-child(6):before{background:rgba(36,201,104,.12);border-color:rgba(73,221,131,.28)}
+.discount-tiers>span:nth-child(6):after{color:#58e48d}
+
+/* Calculator fine print / secondary information stays highly readable. */
+.advantage-calculator .calc-topline>span,
+.advantage-calculator .calc-scale span,
+.advantage-results article>span,
+.advantage-calculator .calc-disclaimer{
+  color:#eef7f2!important;
+  opacity:1!important;
+}
+.advantage-calculator .calc-topline>span{font-size:13px!important}
+.advantage-calculator .calc-scale span{font-weight:850!important;color:#c8d9d0!important}
+.advantage-results article>span{font-size:11px!important;line-height:1.42!important}
+.advantage-calculator .calc-disclaimer{font-size:11.5px!important;line-height:1.6!important}
+
+/* Story artwork container: premium framing for the approved corrected-green asset. */
+#story .story-artwork,
+#story img[src*="propel-ministry-first-approved"]{
+  border-radius:30px;
+  box-shadow:0 30px 70px rgba(5,24,16,.16);
+}
+
+@media(max-width:900px){
+  .discount-tiers{grid-template-columns:1fr!important}
+  .discount-tiers>span{min-height:auto}
+}
