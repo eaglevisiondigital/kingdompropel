@@ -102,3 +102,51 @@ if(toggle && nav){
     slider.addEventListener('input',()=>update(root,slider.value));
   });
 })();
+
+
+/* V83 — hard rule: external websites always open separately */
+(() => {
+  const applyExternalLinkRule = (scope=document) => {
+    scope.querySelectorAll('a[href]').forEach(a => {
+      const raw=(a.getAttribute('href')||'').trim();
+      if(!raw || raw.startsWith('#') || raw.startsWith('/') || raw.startsWith('mailto:') || raw.startsWith('tel:') || raw.startsWith('javascript:')) return;
+      try{
+        const url=new URL(raw,window.location.href);
+        if(/^https?:$/.test(url.protocol) && url.hostname !== window.location.hostname){
+          a.target='_blank';
+          const rel=new Set((a.getAttribute('rel')||'').split(/\s+/).filter(Boolean));
+          rel.add('noopener'); rel.add('noreferrer');
+          a.setAttribute('rel',[...rel].join(' '));
+        }
+      }catch(e){}
+    });
+  };
+  applyExternalLinkRule();
+  const observer=new MutationObserver(mutations=>{
+    mutations.forEach(m=>m.addedNodes.forEach(node=>{
+      if(node.nodeType===1){
+        if(node.matches?.('a[href]')) applyExternalLinkRule(node.parentElement||document);
+        else applyExternalLinkRule(node);
+      }
+    }));
+  });
+  observer.observe(document.documentElement,{childList:true,subtree:true});
+})();
+
+
+/* V91 — universal persistent header menu behavior */
+(() => {
+  const header=document.querySelector('body > header, .site-header, header');
+  const toggle=header?.querySelector('.mobile-toggle');
+  const nav=header?.querySelector('.nav-links');
+  if(!toggle||!nav) return;
+  const close=()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';document.documentElement.classList.remove('nav-open')};
+  const open=()=>{nav.classList.add('open');toggle.setAttribute('aria-expanded','true');toggle.textContent='×';document.documentElement.classList.add('nav-open')};
+  // Replace any prior click handler by cloning the button.
+  const cleanToggle=toggle.cloneNode(true);
+  toggle.replaceWith(cleanToggle);
+  cleanToggle.addEventListener('click',e=>{e.preventDefault();nav.classList.contains('open')?close():open()});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape') close()});
+  window.addEventListener('resize',()=>{if(window.innerWidth>980) close()});
+})();
