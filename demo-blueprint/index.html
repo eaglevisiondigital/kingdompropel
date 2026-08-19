@@ -17,6 +17,29 @@
     @media(max-width:1180px){.cover-art-v85{min-height:650px}.cover-ecosystem-hero-v85{width:min(112%,860px)}}
     @media(max-width:860px){.cover-art-v85{min-height:600px;margin-top:18px}.cover-ecosystem-hero-v85{width:min(105%,720px)}}
     @media(max-width:560px){.cover-art-v85{min-height:auto;margin-top:26px}.cover-ecosystem-hero-v85{width:100%;max-width:560px}}
+
+    /* V86 — Digital Front Door + Dream Team + Kids/Check-In polish. Foundations sections stay gold / black / white — no Propel green. */
+    #website .eyebrow{color:#6f7d78!important}
+    #website .foundations-quote{color:#7d5c2d!important;border-color:#cba36a!important;background:linear-gradient(135deg,rgba(203,163,106,.12),rgba(255,255,255,.62))!important}
+    #website .number-lines span b{color:#9a6b2e!important}
+    #website .website-tour-caption i{background:#cba36a!important}
+
+    #serving .service-steps{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:14px!important;align-items:stretch!important;margin-top:34px!important;max-width:820px!important}
+    #serving .service-steps i{display:none!important}
+    #serving .service-steps span{position:relative!important;min-width:0!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:6px!important;padding:18px 18px 16px 58px!important;border:1px solid rgba(203,163,106,.55)!important;border-radius:20px!important;background:linear-gradient(145deg,rgba(203,163,106,.10),rgba(203,163,106,.025))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 16px 36px rgba(0,0,0,.14)!important;color:#fff!important;font-weight:800!important;letter-spacing:-.01em!important}
+    #serving .service-steps span b{position:absolute!important;left:15px!important;top:50%!important;transform:translateY(-50%)!important;width:32px!important;height:32px!important;border-radius:50%!important;display:grid!important;place-items:center!important;background:#cba36a!important;color:#111!important;font-size:14px!important;box-shadow:0 0 0 6px rgba(203,163,106,.10)!important}
+    #serving .service-steps span:not(:last-child)::after{content:'→';position:absolute;right:-14px;top:50%;transform:translate(50%,-50%);z-index:3;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#111;color:#cba36a;border:1px solid rgba(203,163,106,.5);font-size:16px}
+    #serving .service-steps span:hover{transform:translateY(-3px);border-color:#cba36a!important;background:linear-gradient(145deg,rgba(203,163,106,.18),rgba(203,163,106,.05))!important}
+
+    #kids .feature-list.compact{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important;margin-top:30px!important;max-width:860px!important}
+    #kids .feature-list.compact span{position:relative!important;display:flex!important;align-items:center!important;min-height:72px!important;padding:16px 18px 16px 56px!important;border:1px solid rgba(203,163,106,.52)!important;border-radius:18px!important;background:linear-gradient(145deg,#fffdfa,#f7efe3)!important;color:#111!important;font-weight:760!important;box-shadow:0 12px 28px rgba(71,49,23,.06)!important}
+    #kids .feature-list.compact span::before{content:'✦';position:absolute;left:18px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#17120d;color:#cba36a;border:1px solid rgba(203,163,106,.8);font-size:12px}
+    #kids .feature-list.compact span:nth-child(2n)::before{content:'◆'}
+    #kids .feature-list.compact span:nth-child(3n)::before{content:'●'}
+    #kids .feature-list.compact span:hover{transform:translateY(-2px);border-color:#b8894e!important;box-shadow:0 16px 34px rgba(71,49,23,.10)!important}
+
+    @media(max-width:980px){#serving .service-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}#serving .service-steps span:last-child{grid-column:1/-1;max-width:50%}#serving .service-steps span::after{display:none!important}}
+    @media(max-width:700px){#serving .service-steps{grid-template-columns:1fr!important}#serving .service-steps span:last-child{max-width:none;grid-column:auto}#kids .feature-list.compact{grid-template-columns:1fr!important}}
   </style>
 </head>
 <body data-blueprint-version="63">
@@ -216,13 +239,13 @@
 
     <section class="bp-slide bp-light" id="website" data-title="Digital Front Door">
       <div class="slide-inner mockup-split">
-        <div class="reveal"><p class="eyebrow">YOUR DIGITAL FRONT DOOR</p><h2>First impressions <em>shape every next step.</em></h2><p class="lead small">Before someone meets a pastor, walks through the lobby or hears the message, they experience the church online.</p><div class="number-lines"><span><b>01</b> Who are you?</span><span><b>02</b> What should I expect?</span><span><b>03</b> How do I take my next step?</span></div><blockquote class="foundations-quote">The website is not designed merely to impress. It is designed to invite.</blockquote></div>
+        <div class="reveal"><p class="eyebrow">YOUR DIGITAL FRONT DOOR</p><h2>First impressions <em>shape every next step.</em></h2><p class="lead small">Before someone meets a pastor, walks through the lobby or hears the message, they experience the church online.</p><div class="number-lines"><span><b>01</b> Who are you?</span><span><b>02</b> What should I expect?</span><span><b>03</b> How do I take my next step?</span></div><blockquote class="foundations-quote">The website is not designed merely to impress. It is designed to connect.</blockquote></div>
         <div class="website-demo-wrap reveal delay-1">
           <div class="website-demo-label"><span>FOUNDATIONS.CHURCH</span><b>FULL WEBSITE EXPERIENCE</b></div>
           <div class="browser premium-browser website-tour-browser" aria-label="Scrolling Foundations Church website concept">
             <div class="browser-top"><i></i><i></i><i></i><span>foundations.church</span><em>LIVE CONCEPT</em></div>
             <div class="website-tour-viewport" tabindex="0" aria-label="Foundations Church website preview. Hover to pause the automatic scroll or use touch to inspect on mobile.">
-              <img class="website-tour-image" src="/demo-blueprint/assets/foundations/foundations-website-full.png?v=57" alt="Full Foundations Church homepage concept">
+              <img class="website-tour-image" src="/demo-blueprint/assets/foundations/foundations-website-full-approved-v86.png?v=86" alt="Full Foundations Church homepage concept">
             </div>
           </div>
           <div class="website-tour-caption"><span>FULL DIGITAL FRONT DOOR</span><i></i><span>HOVER TO PAUSE</span><i></i><span>DESIGNED AROUND THE MINISTRY JOURNEY</span></div>
