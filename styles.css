@@ -2818,3 +2818,136 @@ header{
 @media(max-width:640px){
   .outcome-item,.compare-box,.compare-box.propel,.early-points span{border-radius:16px!important}
 }
+
+/* =========================================================
+   V89 — MOBILE-ONLY UX / READABILITY / SPACE OPTIMIZATION
+   Approved Aug. 19, 2026
+   Desktop/tablet presentation remains unchanged.
+   ========================================================= */
+@media (max-width:640px){
+  /* Keep the persistent navigation truly compact so content never hides beneath it. */
+  html{scroll-padding-top:74px!important}
+  body{padding-top:74px!important}
+  body>header,header{
+    height:74px!important;
+    min-height:74px!important;
+    max-height:74px!important;
+  }
+  .nav{height:74px!important;min-height:74px!important;padding:0 2px!important}
+  header .brand img{width:148px!important;max-height:42px!important}
+  .mobile-toggle{font-size:24px!important;padding:8px 4px!important;line-height:1!important}
+
+  /* Hero: no crop/negative overflow; keep copy clear and fully below the header. */
+  .hero-v4{padding:32px 0 24px!important}
+  .hero-v4-copy h1{font-size:clamp(42px,11.4vw,49px)!important;line-height:.98!important;letter-spacing:-.055em!important}
+  .hero-v4-copy>p{font-size:17px!important;line-height:1.55!important;color:#526477!important}
+  .hero-approved-visual{margin-top:12px!important;overflow:visible!important}
+  .hero-approved-visual img{width:100%!important;max-width:100%!important;margin:0!important;transform:none!important}
+
+  /* Partner capability stack: horizontal information cards use substantially less height. */
+  .partner-feature-row{grid-template-columns:1fr!important;gap:10px!important}
+  .partner-feature-row>span{
+    min-height:0!important;
+    padding:14px 15px!important;
+    display:grid!important;
+    grid-template-columns:46px minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    column-gap:13px!important;
+    row-gap:4px!important;
+    text-align:left!important;
+    align-items:center!important;
+    border-radius:16px!important;
+  }
+  .partner-feature-row>span i{
+    grid-row:1/3!important;
+    grid-column:1!important;
+    width:42px!important;height:42px!important;
+    margin:0!important;
+  }
+  .partner-feature-row>span b{grid-column:2!important;font-size:15px!important;line-height:1.18!important}
+  .partner-feature-row>span small{grid-column:2!important;font-size:12px!important;line-height:1.4!important;margin:0!important;max-width:none!important;color:#c5d2dc!important}
+
+  /* Ministry pathway: transform the long vertical graphic into a compact, readable mobile timeline. */
+  .propel-pathway-panel{padding:18px 15px 20px!important;gap:14px!important;border-radius:20px!important}
+  .propel-pathway-intro{padding:0 4px 15px!important}
+  .propel-pathway-intro strong{font-size:19px!important}
+  .propel-pathway-intro span{font-size:14px!important;margin-top:8px!important}
+  .propel-pathway-flow{gap:4px!important}
+  .propel-pathway-step{
+    display:grid!important;
+    grid-template-columns:52px minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    column-gap:13px!important;
+    row-gap:3px!important;
+    align-items:center!important;
+    text-align:left!important;
+    padding:10px 12px!important;
+    border:1px solid rgba(91,140,172,.25)!important;
+    border-radius:15px!important;
+    background:rgba(9,27,41,.58)!important;
+  }
+  .propel-pathway-icon{grid-row:1/3!important;grid-column:1!important;width:46px!important;height:46px!important;margin:0!important}
+  .propel-pathway-icon svg{width:29px!important;height:29px!important}
+  .propel-pathway-step b{grid-column:2!important;font-size:13px!important;line-height:1.2!important}
+  .propel-pathway-step>span:last-child{grid-column:2!important;margin:0!important;font-size:12px!important;line-height:1.38!important;max-width:none!important}
+  .propel-pathway-step>span:last-child br{display:none!important}
+  .propel-pathway-arrow{font-size:19px!important;line-height:1!important;transform:none!important;rotate:90deg!important;padding:0!important;margin:-2px 0!important}
+
+  /* Core capability cards: compact icon + copy layout instead of oversized empty cards. */
+  .propel-capabilities-head{padding:34px 4px 20px!important}
+  .propel-capabilities-head>span{font-size:10px!important;line-height:1.35!important}
+  .propel-capabilities-head h2{font-size:35px!important;line-height:1.02!important}
+  .propel-capabilities-grid{grid-template-columns:1fr!important;gap:10px!important}
+  .propel-cap-card{
+    min-height:0!important;
+    padding:16px 17px!important;
+    display:grid!important;
+    grid-template-columns:50px minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    column-gap:14px!important;
+    row-gap:4px!important;
+    align-items:center!important;
+    text-align:left!important;
+    border-radius:17px!important;
+  }
+  .propel-cap-icon{grid-column:1!important;grid-row:1/3!important;width:46px!important;height:46px!important;margin:0!important}
+  .propel-cap-icon svg{width:27px!important;height:27px!important}
+  .propel-cap-card h3{grid-column:2!important;margin:0!important;font-size:17px!important;line-height:1.18!important}
+  .propel-cap-card p{grid-column:2!important;margin:0!important;max-width:none!important;font-size:13px!important;line-height:1.42!important;color:#bdc9d4!important}
+  .propel-capabilities-cta{padding-top:20px!important}
+  .propel-outline-btn{font-size:14px!important;padding:12px 20px!important}
+
+  /* Experience cards: retain visual wow but remove unnecessary vertical dead space. */
+  .experience-grid{gap:16px!important}
+  .experience-card{padding:18px!important;border-radius:24px!important}
+  .experience-card .experience-media{height:225px!important;margin:4px 0 18px!important}
+  .experience-card h3{font-size:25px!important;line-height:1.08!important}
+  .experience-card p{font-size:15px!important;line-height:1.5!important;color:#5b6c7b!important}
+  .experience-card .text-link{font-size:14px!important}
+
+  /* Module showcase heading and cards: stronger contrast, easier reading, tighter mobile rhythm. */
+  .module-showcase{padding:58px 0!important}
+  .module-head{padding:0 4px!important}
+  .module-head .tag{font-size:10px!important;color:#117c3e!important;background:#e6f6eb!important;border-color:#bde5ca!important}
+  .module-head h2{font-size:clamp(38px,10.4vw,48px)!important;line-height:1.02!important;letter-spacing:-.05em!important}
+  .module-head h2 span{color:#148c46!important}
+  .module-head p{font-size:16px!important;line-height:1.55!important;color:#526477!important;opacity:1!important}
+  .module-preview-grid{gap:16px!important;margin-top:34px!important}
+  .module-preview-card{border-radius:20px!important}
+  .module-preview-card>.module-screen{min-height:285px!important;height:auto!important;padding:14px!important}
+  .module-copy{padding:20px 20px 22px!important}
+  .module-copy>span{font-size:10px!important;color:#117f40!important}
+  .module-copy h3{font-size:22px!important;line-height:1.1!important}
+  .module-copy p{font-size:15px!important;line-height:1.5!important;color:#556879!important}
+  .module-showcase-cta{margin-top:20px!important;padding:24px 20px!important;border-radius:20px!important}
+  .module-showcase-cta>div>span{font-size:10px!important;color:#0e8340!important}
+  .module-showcase-cta h3{font-size:28px!important;line-height:1.12!important;margin-top:8px!important}
+  .module-showcase-cta .btn{min-height:54px!important;font-size:15px!important}
+
+  /* Dark outcome / why-Propel areas: lift copy contrast without flattening the premium dark palette. */
+  .outcome-section{padding:64px 0!important}
+  .outcome-grid{gap:30px!important}
+  .outcome-copy h2{font-size:46px!important;line-height:.98!important}
+  .outcome-copy p{font-size:16px!important;line-height:1.55!important;color:#c3d0da!important}
+  .outcome-copy .text-link{font-size:14px!important;color:#49df83!important}
+}
