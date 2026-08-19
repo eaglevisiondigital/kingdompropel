@@ -40,9 +40,45 @@
 
     @media(max-width:980px){#serving .service-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}#serving .service-steps span:last-child{grid-column:1/-1;max-width:50%}#serving .service-steps span::after{display:none!important}}
     @media(max-width:700px){#serving .service-steps{grid-template-columns:1fr!important}#serving .service-steps span:last-child{max-width:none;grid-column:auto}#kids .feature-list.compact{grid-template-columns:1fr!important}}
+
+    /* V87 — approved Dream Team, Prayer/Care and Media polish. Foundations gold/black/white only; no Propel green in content. */
+    #serving .service-steps{max-width:920px!important;gap:18px!important}
+    #serving .service-steps span{min-height:122px!important;padding:56px 16px 18px!important;align-items:center!important;text-align:center!important;border-radius:22px!important;background:linear-gradient(180deg,rgba(203,163,106,.12),rgba(203,163,106,.035))!important;border-color:rgba(203,163,106,.65)!important;overflow:visible!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 18px 38px rgba(0,0,0,.2)!important}
+    #serving .service-steps span b{left:18px!important;top:18px!important;transform:none!important;width:40px!important;height:40px!important;font-size:17px!important;background:linear-gradient(145deg,#e8c88f,#c49451)!important;box-shadow:0 0 0 7px rgba(203,163,106,.12),0 8px 18px rgba(0,0,0,.22)!important}
+    #serving .service-steps span::before{position:absolute;top:22px;right:18px;color:#cba36a;font-size:21px;font-weight:400;opacity:.95}
+    #serving .service-steps span:nth-of-type(1)::before{content:'○'}
+    #serving .service-steps span:nth-of-type(2)::before{content:'✎'}
+    #serving .service-steps span:nth-of-type(3)::before{content:'◇'}
+    #serving .service-steps span:nth-of-type(4)::before{content:'□'}
+    #serving .service-steps span:nth-of-type(5)::before{content:'♡'}
+    #serving .service-steps span:not(:last-child)::after{right:-18px!important;width:34px!important;height:34px!important;background:#15110d!important;border-color:#cba36a!important;color:#d7aa68!important;box-shadow:0 6px 16px rgba(0,0,0,.28)!important}
+
+    #prayer .care-route{display:grid!important;grid-template-columns:minmax(0,1fr) 54px minmax(0,1fr) 54px minmax(0,1fr)!important;gap:18px!important;align-items:center!important;margin-top:34px!important}
+    #prayer .care-route>div{position:relative!important;min-height:154px!important;padding:34px 28px 28px 108px!important;border:1px solid rgba(203,163,106,.58)!important;border-radius:22px!important;background:linear-gradient(145deg,#fffdf8,#f7ecdd)!important;box-shadow:0 18px 36px rgba(81,53,22,.09)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:9px!important}
+    #prayer .care-route>div::before{position:absolute;left:28px;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(203,163,106,.62);background:rgba(203,163,106,.09);color:#b9843f;font-size:25px;font-weight:700}
+    #prayer .care-route>div:nth-of-type(1)::before{content:'▱'}
+    #prayer .care-route>div:nth-of-type(2)::before{content:'♧'}
+    #prayer .care-route>div:nth-of-type(3)::before{content:'♡'}
+    #prayer .care-route b{font-family:Georgia,'Times New Roman',serif!important;font-size:31px!important;color:#07111f!important;letter-spacing:-.02em!important}
+    #prayer .care-route span{font-size:16px!important;line-height:1.45!important;color:#69716f!important}
+    #prayer .care-route i{width:44px!important;height:44px!important;border-radius:50%!important;display:grid!important;place-items:center!important;background:linear-gradient(145deg,#e7c994,#c4914e)!important;color:#17120d!important;border:1px solid rgba(153,106,46,.45)!important;font-size:24px!important;box-shadow:0 8px 18px rgba(102,68,27,.15)!important}
+    #prayer .green-quote{color:#7d5c2d!important;border-color:#cba36a!important;background:linear-gradient(135deg,rgba(203,163,106,.11),rgba(255,255,255,.7))!important}
+
+    #media .media-player{position:relative!important;min-height:0!important;padding:0!important;background:#0b0b0a!important;border:1px solid rgba(203,163,106,.68)!important;border-radius:24px!important;overflow:hidden!important;box-shadow:0 24px 56px rgba(0,0,0,.28)!important}
+    #media .media-player>img.media-experience-v87{display:block;width:100%;height:auto;aspect-ratio:855/390;object-fit:cover}
+    #media .media-side{gap:16px!important}
+    #media .media-side article{position:relative!important;padding:24px 26px 24px 86px!important;min-height:116px!important;border-radius:20px!important;border:1px solid rgba(203,163,106,.43)!important;background:linear-gradient(145deg,rgba(203,163,106,.075),rgba(18,15,11,.94))!important;box-shadow:0 14px 30px rgba(0,0,0,.16)!important}
+    #media .media-side article::before{position:absolute;left:24px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(203,163,106,.58);color:#cba36a;background:rgba(203,163,106,.06);font-size:19px}
+    #media .media-side article:nth-child(1)::before{content:'◉'}
+    #media .media-side article:nth-child(2)::before{content:'▤'}
+    #media .media-side article:nth-child(3)::before{content:'◷'}
+    #media .media-side article small{color:#d3a35e!important;font-weight:800!important;letter-spacing:.16em!important}
+    #media .media-side article p{color:#d8d8d3!important;font-size:15.5px!important;line-height:1.5!important}
+
+    @media(max-width:980px){#prayer .care-route{grid-template-columns:1fr!important}#prayer .care-route i{margin:auto!important;transform:rotate(90deg)}#serving .service-steps span::before{display:none}}
   </style>
 </head>
-<body data-blueprint-version="63">
+<body data-blueprint-version="87">
   <div class="bp-progress" aria-hidden="true"><span id="progressBar"></span></div>
   <button class="bp-menu" id="menuToggle" aria-label="Open blueprint navigation">☰</button>
 
@@ -369,7 +405,7 @@
     <section class="bp-slide bp-dark" id="media" data-title="Media">
       <div class="slide-inner media-layout">
         <div class="reveal"><p class="eyebrow gold">MEDIA + LIVESTREAM</p><h2>If it can be part of your media experience, <em>Propel can bring it together.</em></h2><p class="lead small">Live video, archives, series, notes, PDFs, community chat and contextual ministry actions can live in one branded experience.</p></div>
-        <div class="media-player reveal delay-1"><span class="live-badge">LIVE</span><div class="cross-light">✦</div><button class="play">▶</button><div class="player-meta"><div><small>SUNDAY WORSHIP</small><b>Faith That Builds</b><span>Pastor Dana Reed · Foundations Church</span></div><div><button>Notes</button><button>Prayer</button><button>Give</button></div></div></div>
+        <div class="media-player reveal delay-1"><img class="media-experience-v87" src="/demo-blueprint/assets/foundations/foundations-media-experience-approved-v87.png" alt="Foundations Church live worship media experience with sermon title, play control, notes, prayer and giving actions"></div>
         <div class="media-side reveal delay-2"><article><small>FLEXIBLE VIDEO SOURCES</small><p>Livestream and archived content can be incorporated around the ministry setup.</p></article><article><small>MORE THAN A PLAYER</small><p>Notes, resources, giving, prayer actions and next steps can live beside the message.</p></article><article><small>SMART CONTENT WINDOWS</small><p>Promote what matters before, during and after a live experience.</p></article></div>
       </div><div class="slide-no">17 / 29</div>
     </section>
