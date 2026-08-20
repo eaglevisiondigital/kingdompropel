@@ -83,6 +83,25 @@ footer .brand img{width:215px;max-height:62px}
   .nav-links.open .btn{justify-content:center;padding:13px 18px;margin-top:4px}
 }
 
+/* V92 — consolidated mobile containment and readability safeguard */
+html,body{max-width:100%;overflow-x:clip}
+img,video,iframe,canvas,svg{max-width:100%;height:auto}
+.container,.nav,.footer-grid,main,section,article,.card,[class*="grid"],[class*="shell"],[class*="visual"]{min-width:0}
+@media(max-width:640px){
+  .container{width:min(100% - 32px,1180px)!important}
+  section{max-width:100%;overflow-wrap:anywhere}
+  h1,h2,h3,p{max-width:100%}
+  .btn,.cta .btn,.addon-callout .btn{white-space:normal!important;text-align:center!important;line-height:1.25!important;padding-inline:18px!important}
+  .cap-grid,.feature-grid,.module-grid,.partner-value-grid,.partner-page-grid,.journey,.entitlement-flow,.giving-ecosystem-grid{grid-template-columns:minmax(0,1fr)!important}
+  .cap-card,.feature-card,.module-card,.partner-value-grid article,.partner-page-grid article{min-height:0!important;height:auto!important}
+  .capability-tags,.needs-chips,.ministry-payment-grid{max-width:100%;overflow:hidden}
+  .capability-tags span,.needs-chips span,.ministry-payment-grid span{min-width:0;white-space:normal;overflow-wrap:anywhere}
+  .product-hero img,.page-hero img,[class*="mockup"] img,[class*="device"] img{max-width:100%!important;height:auto!important;object-fit:contain!important}
+  .footer-grid{grid-template-columns:minmax(0,1fr)!important}
+  footer .brand img{width:min(150px,60vw)!important;height:auto!important}
+  footer p,footer a,footer span{overflow-wrap:anywhere}
+}
+
 .footer-contact{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between;padding:18px 0 0;color:#94a3b8;font-size:14px}.footer-contact a{color:#b8f7cb;text-decoration:none}.footer-contact a:hover{text-decoration:underline}
 
 /* V2 flagship homepage refinement */

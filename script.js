@@ -103,6 +103,17 @@ if(toggle && nav){
   });
 })();
 
+/* V92 — same-host absolute URLs stay in Propel; every true external URL opens separately. */
+document.querySelectorAll('a[href]').forEach(a=>{
+  try{
+    const url=new URL(a.getAttribute('href'),location.href);
+    if(/^https?:$/.test(url.protocol) && url.origin!==location.origin){
+      a.target='_blank';
+      a.rel='noopener noreferrer';
+    }
+  }catch(_error){}
+});
+
 
 /* V83 — hard rule: external websites always open separately */
 (() => {
