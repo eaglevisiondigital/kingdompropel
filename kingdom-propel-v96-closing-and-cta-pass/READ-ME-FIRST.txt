@@ -1,0 +1,35 @@
+KINGDOM PROPEL — V96 CLOSING + CTA CORRECTIVE UPDATE
+
+This is a small update, not a complete website rebuild.
+
+WHAT TO UPLOAD
+Open the folder named:
+UPLOAD-THESE-3-FILES-INSIDE-demo-blueprint
+
+It contains exactly these three replacement files:
+1. index.html
+2. blueprint.css
+3. blueprint.js
+
+WHERE THEY GO IN GITHUB
+1. Open the kingdompropel repository.
+2. Open the existing demo-blueprint folder.
+3. Click Add file, then Upload files.
+4. Drag the THREE FILES themselves into the upload window.
+   Do not drag the outer V96 folder into GitHub.
+5. Confirm that GitHub shows the files replacing:
+   demo-blueprint/index.html
+   demo-blueprint/blueprint.css
+   demo-blueprint/blueprint.js
+6. Commit the changes to main.
+7. Wait for the site deployment to finish, then refresh the Blueprint page.
+
+HOW TO CONFIRM THE CORRECT VERSION IS LIVE
+- The main closing button says: Schedule My Free Strategy Session
+- The Partner Platform pill says: CUSTOM BRANDED TO YOUR CHURCH OR MINISTRY
+- The final slide contains one complete Propel logo and no Foundations Church logo
+- There is no footer beneath the next-step form
+
+IMPORTANT
+The public page was still serving Blueprint version 88 when this update was prepared.
+These three files move the corrected checkpoint to version 96 and include the prior responsive layout fixes.
