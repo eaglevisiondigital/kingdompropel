@@ -1,36 +1,46 @@
-KINGDOM PROPEL — EMERGENCY GITHUB HOMEPAGE RESTORE
+KINGDOM PROPEL BLUEPRINT — FOOTER-ONLY FIX
 
-This package restores only the front-facing Kingdom Propel homepage.
-It does not replace or change the Digital Ministry Blueprint.
+This update fixes only the footer at the end of the Propel Digital Ministry Blueprint.
+It does not replace the front-facing Kingdom Propel homepage.
+
+IMPORTANT
+
+DO NOT upload these two files at the main repository root.
+The index.html file must go inside the existing demo-blueprint folder.
 
 UPLOAD INSTRUCTIONS
 
-1. Open the kingdompropel repository on GitHub and remain on its main Code page.
+1. Open the kingdompropel repository on GitHub.
 
-2. Make sure you are at the repository root. The breadcrumb should show only:
-   eaglevisiondigital / kingdompropel
+2. Click the existing demo-blueprint folder so the breadcrumb reads:
+   eaglevisiondigital / kingdompropel / demo-blueprint
 
 3. Click Add file, then Upload files.
 
-4. On your Mac, open the folder named:
-   UPLOAD-THIS-ONE-FILE-TO-GITHUB-ROOT
+4. Open the folder in this download named:
+   UPLOAD-BOTH-FILES-INSIDE-GITHUB-DEMO-BLUEPRINT-FOLDER
 
-5. Drag ONLY the index.html file into GitHub.
-   Do not drag the outer folder or this instruction file.
-
-6. Before committing, confirm GitHub shows the destination as:
+5. Drag these two files into GitHub:
    index.html
+   blueprint.css
 
-   It must NOT show:
+6. Confirm GitHub is replacing the two existing files inside demo-blueprint.
+   The destination must be:
    demo-blueprint/index.html
+   demo-blueprint/blueprint.css
 
-   It must also NOT be placed inside a newly created folder.
+7. Commit with this message:
+   Fix Blueprint footer layout and scaling
 
-7. Use this commit message:
-   Restore front-facing homepage from b59d597
+8. Wait for Netlify to finish the new deployment, then refresh:
+   https://kingdompropel.com/demo-blueprint/
 
-8. Commit the change to the main branch, then allow Netlify a few minutes to deploy it.
+WHAT THIS FIX CHANGES
 
-This verified index.html comes from the last known-good front-facing website commit,
-b59d597. It references the existing root styles.css and script.js files and leaves
-the demo-blueprint folder untouched.
+- Constrains the Propel logo to a normal footer size.
+- Creates an intentional four-column desktop footer.
+- Stacks the footer cleanly on tablets and phones.
+- Restores readable text, links, spacing and contrast.
+- Changes the Blueprint stylesheet version so browsers load the new CSS instead
+  of reusing the broken cached footer.
+- Leaves the front-facing homepage and all other Blueprint sections unchanged.
