@@ -1102,3 +1102,17 @@ body[data-blueprint-version="57"]{--v57:1}
   .bp-footer-col a,.bp-footer-col span{font-size:13px}
   .bp-footer-bottom,.bp-footer-contact{display:grid;gap:6px}
 }
+
+/* V71 — The Future: one Propel logo replaces the stacked Propel + Foundations logos. */
+#future .future-propel-single{
+  display:block;
+  width:min(470px,72vw);
+  max-width:100%;
+  height:auto;
+  margin:0 auto 32px;
+  object-fit:contain;
+  filter:none;
+}
+@media(max-width:560px){
+  #future .future-propel-single{width:min(340px,86vw);margin-bottom:26px}
+}
