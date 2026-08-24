@@ -1,46 +1,47 @@
-KINGDOM PROPEL BLUEPRINT — FOOTER-ONLY FIX
+KINGDOM PROPEL — CORRECT PLACEMENT + BLUEPRINT FOOTER FIX
 
-This update fixes only the footer at the end of the Propel Digital Ministry Blueprint.
-It does not replace the front-facing Kingdom Propel homepage.
+The previous upload placed the Blueprint files at the repository root. This package
+corrects both problems in one commit:
 
-IMPORTANT
-
-DO NOT upload these two files at the main repository root.
-The index.html file must go inside the existing demo-blueprint folder.
+1. It restores the front-facing website at kingdompropel.com.
+2. It installs the footer repair inside the real demo-blueprint folder.
 
 UPLOAD INSTRUCTIONS
 
-1. Open the kingdompropel repository on GitHub.
+1. Unzip this download.
 
-2. Click the existing demo-blueprint folder so the breadcrumb reads:
-   eaglevisiondigital / kingdompropel / demo-blueprint
+2. Open the folder named:
+   DRAG-THESE-2-ITEMS-TO-GITHUB-ROOT
 
-3. Click Add file, then Upload files.
+   You will see exactly two items:
+   - index.html
+   - demo-blueprint (a folder)
 
-4. Open the folder in this download named:
-   UPLOAD-BOTH-FILES-INSIDE-GITHUB-DEMO-BLUEPRINT-FOLDER
+3. Open the kingdompropel repository on GitHub and stay at the repository root.
+   The breadcrumb must read only:
+   eaglevisiondigital / kingdompropel
 
-5. Drag these two files into GitHub:
+4. Click Add file, then Upload files.
+
+5. From the folder on your Mac, select and drag BOTH of these items into GitHub:
+   - the index.html file
+   - the entire CLOSED demo-blueprint folder
+
+   Do not open demo-blueprint and drag out its individual files.
+
+6. Before committing, GitHub's upload list must show these three destinations:
    index.html
-   blueprint.css
-
-6. Confirm GitHub is replacing the two existing files inside demo-blueprint.
-   The destination must be:
    demo-blueprint/index.html
    demo-blueprint/blueprint.css
 
-7. Commit with this message:
-   Fix Blueprint footer layout and scaling
+   If it shows blueprint.css by itself at the repository root, CANCEL the upload.
 
-8. Wait for Netlify to finish the new deployment, then refresh:
+7. Commit with this message:
+   Restore homepage and correctly install Blueprint footer fix
+
+8. Wait for Netlify to deploy. Then check both:
+   https://kingdompropel.com/
    https://kingdompropel.com/demo-blueprint/
 
-WHAT THIS FIX CHANGES
-
-- Constrains the Propel logo to a normal footer size.
-- Creates an intentional four-column desktop footer.
-- Stacks the footer cleanly on tablets and phones.
-- Restores readable text, links, spacing and contrast.
-- Changes the Blueprint stylesheet version so browsers load the new CSS instead
-  of reusing the broken cached footer.
-- Leaves the front-facing homepage and all other Blueprint sections unchanged.
+The corrected Blueprint stylesheet uses a new version number so the browser will
+not reuse the broken cached footer.
