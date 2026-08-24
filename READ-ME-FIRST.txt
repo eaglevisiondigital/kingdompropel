@@ -1,47 +1,43 @@
-KINGDOM PROPEL — CORRECT PLACEMENT + BLUEPRINT FOOTER FIX
+KINGDOM PROPEL BLUEPRINT — THE FUTURE LOGO-ONLY FIX
 
-The previous upload placed the Blueprint files at the repository root. This package
-corrects both problems in one commit:
+This update changes only the logo area in the final Blueprint section.
 
-1. It restores the front-facing website at kingdompropel.com.
-2. It installs the footer repair inside the real demo-blueprint folder.
+WHAT IT DOES
+
+- Removes the smaller Propel logo.
+- Removes the Foundations Church logo.
+- Places one larger approved Propel logo in that area.
+- Preserves the repaired Blueprint footer and all other current changes.
+- Updates the stylesheet version so the change is not hidden by browser caching.
 
 UPLOAD INSTRUCTIONS
 
 1. Unzip this download.
 
 2. Open the folder named:
-   DRAG-THESE-2-ITEMS-TO-GITHUB-ROOT
+   DRAG-THIS-CLOSED-FOLDER-TO-GITHUB-ROOT
 
-   You will see exactly two items:
-   - index.html
-   - demo-blueprint (a folder)
+3. Inside it is one folder named demo-blueprint.
+   Keep that demo-blueprint folder CLOSED.
 
-3. Open the kingdompropel repository on GitHub and stay at the repository root.
+4. Open the kingdompropel repository on GitHub and stay at the repository root.
    The breadcrumb must read only:
    eaglevisiondigital / kingdompropel
 
-4. Click Add file, then Upload files.
+5. Click Add file, then Upload files.
 
-5. From the folder on your Mac, select and drag BOTH of these items into GitHub:
-   - the index.html file
-   - the entire CLOSED demo-blueprint folder
+6. Drag the entire CLOSED demo-blueprint folder into GitHub.
+   Do not open it and drag the individual files.
 
-   Do not open demo-blueprint and drag out its individual files.
-
-6. Before committing, GitHub's upload list must show these three destinations:
-   index.html
+7. Before committing, GitHub must show these destinations:
    demo-blueprint/index.html
    demo-blueprint/blueprint.css
 
-   If it shows blueprint.css by itself at the repository root, CANCEL the upload.
+   If it shows index.html or blueprint.css by itself at the repository root,
+   CANCEL the upload.
 
-7. Commit with this message:
-   Restore homepage and correctly install Blueprint footer fix
+8. Commit with this message:
+   Replace final Blueprint logos with one Propel logo
 
-8. Wait for Netlify to deploy. Then check both:
-   https://kingdompropel.com/
+9. Wait for Netlify to deploy, then refresh:
    https://kingdompropel.com/demo-blueprint/
-
-The corrected Blueprint stylesheet uses a new version number so the browser will
-not reuse the broken cached footer.
