@@ -1,43 +1,35 @@
-KINGDOM PROPEL BLUEPRINT — THE FUTURE LOGO-ONLY FIX
+KINGDOM PROPEL — V96 CLOSING + CTA CORRECTIVE UPDATE
 
-This update changes only the logo area in the final Blueprint section.
+This is a small update, not a complete website rebuild.
 
-WHAT IT DOES
+WHAT TO UPLOAD
+Open the folder named:
+UPLOAD-THESE-3-FILES-INSIDE-demo-blueprint
 
-- Removes the smaller Propel logo.
-- Removes the Foundations Church logo.
-- Places one larger approved Propel logo in that area.
-- Preserves the repaired Blueprint footer and all other current changes.
-- Updates the stylesheet version so the change is not hidden by browser caching.
+It contains exactly these three replacement files:
+1. index.html
+2. blueprint.css
+3. blueprint.js
 
-UPLOAD INSTRUCTIONS
-
-1. Unzip this download.
-
-2. Open the folder named:
-   DRAG-THIS-CLOSED-FOLDER-TO-GITHUB-ROOT
-
-3. Inside it is one folder named demo-blueprint.
-   Keep that demo-blueprint folder CLOSED.
-
-4. Open the kingdompropel repository on GitHub and stay at the repository root.
-   The breadcrumb must read only:
-   eaglevisiondigital / kingdompropel
-
-5. Click Add file, then Upload files.
-
-6. Drag the entire CLOSED demo-blueprint folder into GitHub.
-   Do not open it and drag the individual files.
-
-7. Before committing, GitHub must show these destinations:
+WHERE THEY GO IN GITHUB
+1. Open the kingdompropel repository.
+2. Open the existing demo-blueprint folder.
+3. Click Add file, then Upload files.
+4. Drag the THREE FILES themselves into the upload window.
+   Do not drag the outer V96 folder into GitHub.
+5. Confirm that GitHub shows the files replacing:
    demo-blueprint/index.html
    demo-blueprint/blueprint.css
+   demo-blueprint/blueprint.js
+6. Commit the changes to main.
+7. Wait for the site deployment to finish, then refresh the Blueprint page.
 
-   If it shows index.html or blueprint.css by itself at the repository root,
-   CANCEL the upload.
+HOW TO CONFIRM THE CORRECT VERSION IS LIVE
+- The main closing button says: Schedule My Free Strategy Session
+- The Partner Platform pill says: CUSTOM BRANDED TO YOUR CHURCH OR MINISTRY
+- The final slide contains one complete Propel logo and no Foundations Church logo
+- There is no footer beneath the next-step form
 
-8. Commit with this message:
-   Replace final Blueprint logos with one Propel logo
-
-9. Wait for Netlify to deploy, then refresh:
-   https://kingdompropel.com/demo-blueprint/
+IMPORTANT
+The public page was still serving Blueprint version 88 when this update was prepared.
+These three files move the corrected checkpoint to version 96 and include the prior responsive layout fixes.
