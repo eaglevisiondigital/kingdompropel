@@ -35,6 +35,8 @@
   links.forEach(a => a.addEventListener('click', () => sidebar.classList.remove('open')));
 
   addEventListener('keydown', e => {
+    // Keep native arrow-key editing and range controls inside interactive UI.
+    if ((e.target instanceof Element && e.target.closest('input, textarea, select, button, [contenteditable="true"]')) || document.body.classList.contains('bp-next-step-open-v100')) return;
     if (!['ArrowDown','ArrowRight','PageDown','ArrowUp','ArrowLeft','PageUp'].includes(e.key)) return;
     const current = sections.reduce((best, s, i) => Math.abs(s.getBoundingClientRect().top) < Math.abs(sections[best].getBoundingClientRect().top) ? i : best, 0);
     const forward = ['ArrowDown','ArrowRight','PageDown'].includes(e.key);
@@ -44,7 +46,7 @@
 })();
 
 // V57 deployment marker — makes it easy to verify the catch-up package is live.
-window.PROPEL_BLUEPRINT_VERSION = '100-closing-brand-and-next-step';
+window.PROPEL_BLUEPRINT_VERSION = '101-mobile-readability-and-layout';
 
 // V60 — Blueprint closing savings calculator. Same approved math/tiering as the Propel giving calculators.
 (() => {

@@ -1,0 +1,279 @@
+/* V101 — Blueprint only. Retains approved content/assets and V100 lead capture.
+   Loaded last because earlier releases include inline and !important rules.
+   Shared contrast repairs apply at every width; layout changes are responsive. */
+.bp-main {
+  --bp-readable-ink: #211c16;
+  --bp-readable-muted: #57534d;
+  --bp-readable-gold: #815923;
+  --bp-readable-bright-gold: #edc787;
+  --bp-readable-paper: #fffaf1;
+  --bp-readable-border: #c9ac80;
+}
+.bp-main :is(#vision,#better-way,#website,#mobile,#guests,#groups,#kids,#prayer,#events,#courses,#communication,#workflows,#connect,#ai,#difference,#roadmap,#future) h2 em { color: #8b602a !important; }
+.bp-main :is(.bp-dark,.bp-deep,.bp-foundations-dark) .eyebrow { color: var(--bp-readable-bright-gold) !important; }
+.bp-main #ecosystem .eco-core-v51 > :is(b,span:not(.eco-core-rings-v51),small) { color: #fff4df !important; opacity: 1 !important; }
+.bp-main #guests .journey-momentum-v61 b { color: #edc787 !important; }
+.bp-main #guests .journey-momentum-v61 small { color: #f0e7d8 !important; }
+.bp-main #giving :is(.donor-intro-v61>span,.donor-alert-v61 small) { color: #e6ded1 !important; }
+.bp-main #giving .donor-intro-v61>b { color: #edc787 !important; }
+
+/* Light supporting surfaces separate information from the dark showcase. */
+.bp-main #media .media-side-v99 article,
+.bp-main #partner .partner-blueprint-benefits-v99>span {
+  background: linear-gradient(135deg,#fffdf8,#f3e5ce) !important;
+  border-color: #c9ac80 !important;
+  color: #211c16 !important;
+  box-shadow: 0 12px 30px #00000020 !important;
+}
+.bp-main #media .media-side-v99 article small { color: #815923 !important; }
+.bp-main #media .media-side-v99 article p,
+.bp-main #partner .partner-blueprint-benefits-v99 small { color: #57534d !important; }
+.bp-main #partner .partner-blueprint-benefits-v99 b { color: #211c16 !important; }
+.bp-main #media .media-side-v99 article::before { background: #211c16 !important; color: #edc787 !important; border-color: #b98c4b !important; }
+.bp-main #partner .partner-blueprint-benefits-v99>span::before { color: #815923 !important; }
+.bp-main #groups .group-card.feature { background: #fffaf1 !important; color: #211c16 !important; }
+.bp-main #groups .group-card.feature :is(h3,p) { color: #211c16 !important; }
+.bp-main #groups .group-card.feature small { color: #815923 !important; }
+.bp-main #groups .group-card.feature button { background: #211c16 !important; color: #fffaf1 !important; }
+.bp-main #prayer .prayer-form label { color: #edc787 !important; }
+.bp-main #prayer .prayer-form :is(input,textarea) { color: #211c16 !important; background: #fffaf1 !important; border-color: #c9ac80 !important; }
+.bp-main #prayer .toggle-row small { color: #e6ded1 !important; }
+.bp-main #ai .ask-box { color: #f7ead7 !important; }
+.bp-main #ai .ask-intro p { color: #e6ded1 !important; }
+.bp-main #recommendation .recommendation-outcomes>span { background: #fffaf1 !important; color: #211c16 !important; border-color: #c9ac80 !important; }
+.bp-main #recommendation .bp-adv-copy>p:not(.eyebrow) { color: #e6ded1 !important; }
+.bp-main #recommendation .bp-adv-disclaimer { color: #57534d !important; }
+
+/* This grid was never collapsed by the older mobile rules. */
+@media (max-width: 980px) {
+  .bp-main #growth .mockup-split.reverse { grid-template-columns: minmax(0,1fr) !important; gap: 32px !important; }
+  .bp-main #growth .mockup-split.reverse>.course-board { order: 2; width: 100% !important; max-width: 640px !important; margin-inline: auto !important; }
+  .bp-main #growth .mockup-split.reverse>div:not(.course-board) { order: 1; min-width: 0; }
+}
+
+@media (max-width: 860px) {
+  /* Tall sections can never reach a 12% intersection on short phone screens. */
+  .bp-main .reveal { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+  .bp-main .bp-slide { min-height: 0 !important; padding: 56px 22px 62px !important; }
+  .bp-main .slide-inner { width: 100% !important; min-width: 0 !important; }
+  .bp-main .slide-inner>div { min-width: 0; }
+  .bp-main h2 { font-size: clamp(2.25rem,8.5vw,3.7rem) !important; line-height: 1.04 !important; overflow-wrap: break-word; }
+  .bp-main .eyebrow { font-size: 12px !important; line-height: 1.6 !important; letter-spacing: .18em !important; }
+  .bp-main :is(#cover,#vision,#problem,#better-way,#ecosystem,#website,#mobile,#app,#giving,#guests,#growth,#groups,#serving,#kids,#prayer,#events,#media,#courses,#partner,#communication,#workflows,#operations,#insight,#connect,#ai,#difference,#roadmap,#recommendation,#future) .lead { font-size: 17px !important; line-height: 1.65 !important; }
+  .bp-main :is(.bp-light,.bp-cream,.bp-foundations-cream) .lead { color: #57534d !important; }
+  .bp-main :is(.bp-dark,.bp-deep,.bp-foundations-dark) .lead { color: #e6ded1 !important; }
+  .bp-main .slide-no { font-size: 12px !important; opacity: 1 !important; color: #726c60 !important; }
+  .bp-main :is(.bp-dark,.bp-deep,.bp-foundations-dark) .slide-no { color: #c8b99f !important; }
+  .bp-main blockquote { font-size: clamp(25px,6vw,34px) !important; line-height: 1.25 !important; }
+  .bp-menu { min-width: 44px; min-height: 44px; }
+
+  /* A Better Way: compact connected steps, not empty presentation tiles. */
+  .bp-main #better-way .journey { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; margin-top: 28px !important; }
+  .bp-main #better-way .journey>i { display: none !important; }
+  .bp-main #better-way .journey>div { position: relative; display: grid !important; grid-template-columns: 44px minmax(0,1fr) !important; gap: 4px 14px !important; text-align: left !important; align-content: center !important; min-height: 94px !important; padding: 17px 18px !important; }
+  .bp-main #better-way .journey>div>b { grid-column: 1; grid-row: 1/3; width: 44px !important; height: 44px !important; margin: 0 !important; align-self: center; font-size: 13px !important; }
+  .bp-main #better-way .journey strong { grid-column: 2; margin: 0 !important; font-size: 23px !important; }
+  .bp-main #better-way .journey>div>span { grid-column: 2; font-size: 15px !important; color: #57534d !important; }
+  .bp-main #better-way .journey>div:not(:last-child)::after { content: ''; position: absolute; bottom: -13px; left: 40px; width: 2px; height: 12px; background: #aa7b3e; }
+  .bp-main #better-way .impact-pair article { min-height: 0 !important; padding: 24px !important; }
+  .bp-main #better-way .impact-pair :is(p,small) { font-size: 15px !important; line-height: 1.55 !important; }
+
+  /* Ecosystem: preserve hierarchy, reduce nested padding, restore readable labels. */
+  .bp-main #ecosystem .eco-architecture-v51 { padding: 18px !important; }
+  .bp-main #ecosystem .eco-architecture-head-v51 { flex-wrap: wrap !important; justify-content: center !important; font-size: 11px !important; line-height: 1.5 !important; letter-spacing: .1em !important; }
+  .bp-main #ecosystem .eco-system-grid-v51 { gap: 18px !important; }
+  .bp-main #ecosystem .eco-system-group-v51 { padding: 16px !important; }
+  .bp-main #ecosystem .eco-chip-grid-v51 { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .bp-main #ecosystem .eco-chip-grid-v51>span { min-height: 0 !important; padding: 15px !important; border: 1px solid #c9ac80 !important; border-left: 4px solid #aa7b3e !important; background: #fffaf1 !important; }
+  .bp-main #ecosystem .eco-chip-grid-v51 b { color: #211c16 !important; font-size: 16px !important; line-height: 1.35 !important; }
+  .bp-main #ecosystem .eco-chip-grid-v51 small { color: #57534d !important; font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #ecosystem .eco-group-title-v51 b { font-size: 21px !important; line-height: 1.2 !important; }
+  .bp-main #ecosystem .eco-group-title-v51 small { font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #ecosystem .eco-core-v51 { width: 210px !important; height: 210px !important; }
+  .bp-main #ecosystem .eco-core-v51 small { font-size: 11px !important; }
+  .bp-main #ecosystem .eco-core-v51>span:not(.eco-core-rings-v51) { font-size: 12px !important; }
+  .bp-main #ecosystem .eco-journey-v51 :is(b,small) { font-size: 13px !important; line-height: 1.45 !important; }
+  .bp-main #ecosystem .ecosystem-pillars-v48 :is(small,span) { font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #ecosystem .ecosystem-pillars-v48 strong { font-size: 20px !important; }
+
+  .bp-main :is(#mobile,#groups,#courses) .feature-list { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .bp-main :is(#mobile,#groups,#courses) .feature-list>span { padding: 17px 18px !important; min-height: 56px !important; font-size: 16px !important; line-height: 1.4 !important; color: #211c16 !important; background: #fffaf1 !important; border-color: #c9ac80 !important; border-left-width: 4px !important; }
+  .bp-main #website .website-quote-card p { font-size: 16px !important; line-height: 1.6 !important; color: #57534d !important; }
+  .bp-main #app .app-value-v60 article { background: #18352d !important; border-color: #9f8358 !important; }
+  .bp-main #app .app-value-v60 b { color: #edc787 !important; font-size: 13px !important; }
+  .bp-main #app .app-value-v60 span { color: #fff4df !important; font-size: 16px !important; line-height: 1.5 !important; }
+  .bp-main #giving .donor-engagement-v61 { padding: 24px 20px !important; }
+  .bp-main #giving .donor-intro-v61>b { font-size: 14px !important; }
+  .bp-main #giving .donor-intro-v61>span { font-size: 17px !important; line-height: 1.6 !important; }
+  .bp-main #giving .donor-alert-v61 { gap: 16px !important; padding: 20px 0 !important; }
+  .bp-main #giving .donor-alert-v61 i { flex: 0 0 44px !important; width: 44px !important; height: 44px !important; font-size: 22px !important; }
+  .bp-main #giving .donor-alert-v61 b { font-size: 18px !important; line-height: 1.3 !important; }
+  .bp-main #giving .donor-alert-v61 small { font-size: 16px !important; line-height: 1.5 !important; }
+
+  /* Guest journey and its care modules share a clear type hierarchy. */
+  .bp-main #guests .care-flow-v61>div { min-height: 0 !important; padding: 20px 18px 20px 74px !important; }
+  .bp-main #guests .flow-icon-v61 { left: 18px !important; top: 22px !important; width: 40px !important; height: 40px !important; font-size: 21px !important; }
+  .bp-main #guests .care-flow-v61 b { font-size: 12px !important; }
+  .bp-main #guests .care-flow-v61 strong { font-size: 25px !important; line-height: 1.12 !important; }
+  .bp-main #guests .care-flow-v61 small { font-size: 15px !important; line-height: 1.5 !important; color: #57534d !important; }
+  .bp-main #guests .journey-momentum-v61 { padding: 22px 16px !important; gap: 20px 14px !important; }
+  .bp-main #guests .journey-momentum-v61 b { font-size: 13px !important; }
+  .bp-main #guests .journey-momentum-v61 small { font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #guests .care-cards-v61 article { min-height: 0 !important; padding: 22px 18px !important; gap: 14px !important; grid-template-columns: 42px minmax(0,1fr) !important; }
+  .bp-main #guests .care-cards-v61 article>span { width: 42px !important; height: 42px !important; }
+  .bp-main #guests .care-cards-v61 :is(small,article>b) { font-size: 12px !important; line-height: 1.5 !important; letter-spacing: .12em !important; }
+  .bp-main #guests .care-cards-v61 h3 { font-size: 28px !important; line-height: 1.12 !important; }
+  .bp-main #guests .care-cards-v61 p { font-size: 16px !important; line-height: 1.55 !important; color: #57534d !important; }
+  .bp-main #guests .journey-close-v61 { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; }
+  .bp-main #guests .journey-close-v61 span { font-size: 12px !important; }
+  .bp-main #guests .journey-close-v61 i { display: none !important; }
+
+  .bp-main :is(#growth,#courses) .course-board { padding: 26px 22px !important; }
+  .bp-main :is(#growth,#courses) .course-brand { font-size: 12px !important; line-height: 1.5 !important; }
+  .bp-main :is(#growth,#courses) .course-board h3 { font-size: 34px !important; line-height: 1.1 !important; }
+  .bp-main :is(#growth,#courses) .course-board>p { color: #57534d !important; font-size: 16px !important; }
+  .bp-main :is(#growth,#courses) .course-row { grid-template-columns: 36px minmax(0,1fr) auto !important; gap: 12px !important; padding: 16px 0 !important; }
+  .bp-main :is(#growth,#courses) .course-row.active { padding: 16px 12px !important; }
+  .bp-main :is(#growth,#courses) .course-row>b { width: 36px !important; height: 36px !important; font-size: 13px !important; }
+  .bp-main :is(#growth,#courses) .course-row strong { font-size: 16px !important; line-height: 1.3 !important; }
+  .bp-main :is(#growth,#courses) .course-row small { color: #6d522f !important; font-size: 14px !important; }
+  .bp-main :is(#growth,#courses) .course-tools { flex-wrap: wrap !important; gap: 8px !important; }
+  .bp-main :is(#growth,#courses) .course-tools button { font-size: 14px !important; min-height: 44px !important; padding: 10px 12px !important; }
+  .bp-main #growth .number-lines>span { font-size: 17px !important; line-height: 1.45 !important; }
+  .bp-main #groups .groups-screen { padding: 24px 20px !important; }
+  .bp-main #groups .search { padding: 16px !important; font-size: 15px !important; line-height: 1.5 !important; }
+  .bp-main #groups .group-card.feature { padding: 24px 20px !important; }
+  .bp-main #groups .group-card.feature h3 { font-size: 32px !important; line-height: 1.1 !important; }
+  .bp-main #groups .group-card.feature p { font-size: 15px !important; line-height: 1.5 !important; }
+  .bp-main #groups .group-card.feature button { position: static !important; display: block; margin: 18px 0 0 !important; width: 100% !important; min-height: 44px !important; font-size: 14px !important; }
+  .bp-main #groups .group-list b { font-size: 17px !important; }
+  .bp-main #groups .group-list small { color: #e6ded1 !important; font-size: 14px !important; line-height: 1.5 !important; }
+
+  .bp-main #serving .schedule-board { padding: 22px 18px !important; }
+  .bp-main #serving :is(.board-note,.coverage span,.team-row,.board-top small) { font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #serving .pathway-card { min-height: 0 !important; padding: 20px !important; }
+  .bp-main #serving .pathway-card p { font-size: 15px !important; line-height: 1.5 !important; }
+  .bp-main #kids .feature-list>span { font-size: 16px !important; line-height: 1.4 !important; min-height: 70px !important; padding: 18px 16px !important; }
+  .bp-main #kids .checkin-panel { padding: 24px 20px !important; }
+  .bp-main #kids .checkin-head { flex-wrap: wrap !important; gap: 16px !important; }
+  .bp-main #kids .checkin-head img { width: min(260px,100%) !important; max-width: 100% !important; height: auto !important; object-fit: contain !important; }
+  .bp-main #kids .checkin-head b { font-size: 16px !important; }
+  .bp-main #kids .family-welcome { padding: 20px 16px !important; gap: 14px !important; }
+  .bp-main #kids .family-welcome>span { width: 48px !important; height: 48px !important; flex: 0 0 48px !important; }
+  .bp-main #kids .family-welcome h3 { font-size: 24px !important; }
+  .bp-main #kids :is(.family-welcome small,.family-welcome p,.child-row small,.security-note span) { color: #57534d !important; font-size: 14px !important; line-height: 1.6 !important; }
+  .bp-main #kids .child-row { flex-wrap: wrap !important; padding: 20px 16px !important; gap: 16px !important; }
+  .bp-main #kids .child-row b { font-size: 19px !important; }
+  .bp-main #kids .child-row button { min-height: 44px !important; font-size: 14px !important; }
+  .bp-main #kids .security-note b { font-size: 17px !important; line-height: 1.4 !important; }
+  .bp-main #prayer .prayer-form { padding: 26px 22px !important; }
+  .bp-main #prayer .form-title h3 { font-size: 36px !important; line-height: 1.1 !important; }
+  .bp-main #prayer .form-title p { font-size: 16px !important; line-height: 1.6 !important; color: #e6ded1 !important; }
+  .bp-main #prayer .prayer-form label { font-size: 13px !important; line-height: 1.5 !important; }
+  .bp-main #prayer .prayer-form :is(input,textarea) { font-size: 16px !important; line-height: 1.5 !important; padding: 16px !important; }
+  .bp-main #prayer .prayer-form button { font-size: 15px !important; min-height: 48px !important; }
+  .bp-main #prayer .toggle-row b { font-size: 17px !important; }
+  .bp-main #prayer .toggle-row small { font-size: 14px !important; line-height: 1.5 !important; }
+
+  .bp-main #events .event-console-v99 { padding: 24px 20px !important; gap: 20px !important; }
+  .bp-main #events .event-console-v99 h3 { font-size: 30px !important; line-height: 1.1 !important; }
+  .bp-main #events :is(.event-info p,.event-info small,.registrant-list,.registrant-list>b) { font-size: 14px !important; line-height: 1.5 !important; color: #57534d !important; }
+  .bp-main #events .date-block small { color: #fff4df !important; font-size: 14px !important; }
+  .bp-main #events .event-console-v99 button { font-size: 14px !important; min-height: 44px !important; }
+  .bp-main #events .event-benefits-v99>article { min-height: 76px !important; }
+  .bp-main #events .event-benefits-v99 strong { font-size: 16px !important; line-height: 1.4 !important; }
+  .bp-main #media .media-side-v99 article { min-height: 0 !important; padding: 24px 20px 24px 78px !important; }
+  .bp-main #media .media-side-v99 article::before { left: 20px !important; width: 42px !important; height: 42px !important; }
+  .bp-main #media .media-side-v99 article small { font-size: 13px !important; line-height: 1.5 !important; }
+  .bp-main #media .media-side-v99 article p { font-size: 16px !important; line-height: 1.55 !important; }
+  .bp-main #partner .partner-custom-pill-v99 { font-size: 11px !important; line-height: 1.5 !important; }
+  .bp-main #partner .partner-value-tags-v99 span { font-size: 14px !important; }
+  .bp-main #partner .partner-blueprint-benefits-v99>span { min-height: 0 !important; padding: 22px 20px 22px 46px !important; }
+  .bp-main #partner .partner-blueprint-benefits-v99 b { font-size: 18px !important; line-height: 1.35 !important; }
+  .bp-main #partner .partner-blueprint-benefits-v99 small { font-size: 15px !important; line-height: 1.5 !important; }
+  .bp-main #communication :is(.message-builder-v99,.audience-panel-v99) { padding: 24px 20px !important; }
+  .bp-main #communication .message-builder-v99 label { font-size: 13px !important; color: #57534d !important; }
+  .bp-main #communication .message-builder-v99 textarea { font-size: 16px !important; line-height: 1.55 !important; min-height: 170px !important; padding: 16px !important; }
+  .bp-main #communication .selected-audience { grid-template-columns: 32px minmax(0,1fr) !important; gap: 12px !important; padding: 16px !important; }
+  .bp-main #communication .selected-audience i { width: 32px !important; height: 32px !important; }
+  .bp-main #communication .selected-audience button { grid-column: 2; justify-self: start; padding: 8px 0 !important; }
+  .bp-main #communication .selected-audience b { font-size: 16px !important; line-height: 1.35 !important; }
+  .bp-main #communication :is(.selected-audience small,.message-builder-v99>small) { color: #57534d !important; font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #communication :is(.channels span,.selected-audience button,.send) { font-size: 14px !important; min-height: 44px !important; }
+  .bp-main #communication .channels { flex-wrap: wrap; }
+  .bp-main #communication .audience-chips-v99 { grid-template-columns: 1fr !important; }
+  .bp-main #communication .audience-chips-v99>span { min-height: 64px !important; font-size: 16px !important; }
+  .bp-main #workflows :is(.flow-node,.flow-stack>div) { padding: 22px !important; min-height: 0 !important; }
+  .bp-main #workflows :is(.flow-node,.flow-stack>div) small { font-size: 13px !important; }
+  .bp-main #workflows :is(.flow-node,.flow-stack>div) b { font-size: 21px !important; line-height: 1.35 !important; }
+  .bp-main #workflows :is(.flow-node,.flow-stack>div) span { font-size: 16px !important; line-height: 1.5 !important; color: #57534d !important; }
+  .bp-main #workflows .workflow-examples { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 10px !important; }
+  .bp-main #workflows .workflow-examples span { font-size: 15px !important; padding: 14px !important; line-height: 1.4 !important; text-align: center; }
+
+  /* Physical-to-digital: each approved element gets its own unclipped space. */
+  .bp-main #connect .physical-scene { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 24px !important; min-height: 0 !important; height: auto !important; transform: none !important; }
+  .bp-main #connect :is(.physical-card,.physical-phone,.physical-qr,.physical-watch) { position: relative !important; inset: auto !important; transform: none !important; margin: 0 !important; max-width: 100% !important; }
+  .bp-main #connect .physical-card { width: 100% !important; height: auto !important; padding: 24px !important; }
+  .bp-main #connect .physical-card>img { width: 100% !important; height: auto !important; object-fit: contain !important; }
+  .bp-main #connect .physical-card h3 { font-size: 32px !important; line-height: 1.15 !important; }
+  .bp-main #connect .physical-phone { width: min(340px,100%) !important; height: auto !important; }
+  .bp-main #connect .physical-phone-inner { padding: 24px 18px !important; }
+  .bp-main #connect .physical-phone-inner>img { width: 100% !important; height: auto !important; object-fit: contain !important; }
+  .bp-main #connect .physical-phone-inner>small { font-size: 11px !important; line-height: 1.6 !important; }
+  .bp-main #connect .physical-phone-inner p { font-size: 15px !important; line-height: 1.5 !important; }
+  .bp-main #connect .physical-phone-inner button { min-height: 48px !important; font-size: 15px !important; line-height: 1.4 !important; padding: 12px 14px !important; }
+  .bp-main #connect .physical-benefits article { padding: 18px 16px !important; }
+  .bp-main #connect :is(.physical-usecases b,.physical-benefits b) { font-size: 13px !important; line-height: 1.5 !important; }
+  .bp-main #connect :is(.physical-usecases p,.physical-benefits span) { font-size: 16px !important; line-height: 1.5 !important; }
+  .bp-main #ai .ai-console { padding: 24px 20px !important; }
+  .bp-main #ai .ai-console header b { font-size: 19px !important; }
+  .bp-main #ai .ask-intro { padding: 22px 18px !important; }
+  .bp-main #ai .ask-intro h3 { font-size: 26px !important; line-height: 1.2 !important; }
+  .bp-main #ai .ask-intro p { font-size: 16px !important; line-height: 1.5 !important; }
+  .bp-main #ai .ai-console>button { font-size: 16px !important; line-height: 1.45 !important; min-height: 56px !important; padding: 16px !important; }
+  .bp-main #ai .ask-box { font-size: 16px !important; min-height: 56px !important; }
+  .bp-main #ai .premium-tags span { font-size: 14px !important; line-height: 1.5 !important; }
+
+  .bp-main #difference .difference-premium-cards { gap: 16px !important; }
+  .bp-main #difference .difference-premium-cards article { min-height: 0 !important; height: auto !important; padding: 26px 24px !important; }
+  .bp-main #difference .difference-premium-cards article>b { font-size: 13px !important; }
+  .bp-main #difference .difference-icon { width: 44px !important; height: 44px !important; top: 22px !important; right: 22px !important; }
+  .bp-main #difference .difference-premium-cards h3 { font-size: 29px !important; margin: 32px 0 14px !important; line-height: 1.15 !important; }
+  .bp-main #difference .difference-premium-cards p { font-size: 16px !important; line-height: 1.6 !important; color: #57534d !important; }
+  .bp-main #roadmap .roadmap-premium-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .bp-main #roadmap .roadmap-premium-grid article { display: grid !important; grid-template-columns: 48px minmax(0,1fr) !important; gap: 6px 18px !important; text-align: left !important; min-height: 0 !important; padding: 22px !important; }
+  .bp-main #roadmap .roadmap-premium-grid article>b { grid-column: 2; grid-row: 1; margin: 0 !important; font-size: 12px !important; color: #815923 !important; }
+  .bp-main #roadmap .road-icon { grid-column: 1; grid-row: 1/3; width: 48px !important; height: 48px !important; margin: 0 !important; align-self: center; }
+  .bp-main #roadmap .roadmap-premium-grid h3 { grid-column: 2; grid-row: 2; font-size: 28px !important; line-height: 1.1 !important; margin: 0 !important; }
+  .bp-main #roadmap .roadmap-premium-grid p { grid-column: 2; grid-row: 3; font-size: 15px !important; line-height: 1.5 !important; color: #57534d !important; margin: 4px 0 0 !important; }
+  .bp-main #roadmap .roadmap-premium-note { padding: 24px 20px !important; }
+  .bp-main #roadmap .roadmap-premium-note span { font-size: 23px !important; line-height: 1.3 !important; }
+  .bp-main #recommendation .recommendation-outcomes>span { font-size: 16px !important; line-height: 1.45 !important; padding: 16px !important; }
+  .bp-main #recommendation .recommendation-principles b { font-size: 13px !important; color: #edc787 !important; }
+  .bp-main #recommendation .recommendation-principles p { font-size: 16px !important; line-height: 1.6 !important; color: #e6ded1 !important; }
+  .bp-main #recommendation .bp-adv-copy>p:not(.eyebrow) { font-size: 16px !important; line-height: 1.6 !important; }
+  .bp-main #recommendation .bp-adv-calc { padding: 22px 18px !important; }
+  .bp-main #recommendation :is(.bp-adv-top>span,.bp-adv-results small) { font-size: 12px !important; line-height: 1.5 !important; color: #57534d !important; }
+  .bp-main #recommendation .bp-adv-results .total small { color: #e6ded1 !important; }
+  .bp-main #recommendation .bp-adv-disclaimer { font-size: 13px !important; line-height: 1.6 !important; }
+  .bp-main #recommendation .bp-adv-link { min-height: 48px !important; font-size: 15px !important; line-height: 1.4 !important; }
+  .bp-main #future .future-brand-lockup-v100 { width: min(440px,100%) !important; }
+  .bp-main #future .future-cta-row-v100 .btn { font-size: 16px !important; line-height: 1.4 !important; min-height: 56px !important; }
+  .bp-main #future .future-note-v100 { font-size: 15px !important; line-height: 1.6 !important; color: #57534d !important; }
+  .bp-next-step-modal-v100 .next-step-fields-v100 label { font-size: 12px !important; line-height: 1.5 !important; }
+  .bp-next-step-modal-v100 .next-step-fields-v100 label>span { font-size: 12px !important; color: #57534d !important; }
+  .bp-next-step-modal-v100 .next-step-fields-v100 :is(input,select,textarea) { font-size: 16px !important; min-height: 48px !important; }
+  .bp-next-step-modal-v100 :is(.next-step-form-head-v100 p,.next-step-intro-v100>p) { font-size: 16px !important; line-height: 1.55 !important; }
+  .bp-next-step-modal-v100 :is(.next-step-privacy-v100,.next-step-paths-v100 span) { font-size: 13px !important; line-height: 1.5 !important; }
+  .bp-next-step-modal-v100 .next-step-call-v100 small { font-size: 12px !important; color: #e6ded1 !important; }
+  .bp-next-step-modal-v100 .next-step-close-v100 { width: 44px !important; height: 44px !important; }
+}
+@media (max-width: 400px) {
+  .bp-main .bp-slide { padding-inline: 16px !important; }
+  .bp-main #ecosystem :is(.eco-architecture-v51,.eco-system-group-v51) { padding: 12px !important; }
+  .bp-main #events .event-console-v99 { grid-template-columns: 1fr !important; }
+  .bp-main #workflows .workflow-examples { grid-template-columns: 1fr !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bp-main .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
