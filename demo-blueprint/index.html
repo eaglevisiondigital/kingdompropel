@@ -8,7 +8,7 @@
   <title>Propel Digital Ministry Blueprint — Foundations Church</title>
   <meta name="description" content="Private self-guided Propel Digital Ministry Blueprint demonstrating one connected ministry ecosystem through Foundations Church.">
   <link rel="icon" href="/assets/propel-icon-32.png">
-  <link rel="stylesheet" href="/demo-blueprint/blueprint.css?v=99">
+  <link rel="stylesheet" href="/demo-blueprint/blueprint.css?v=100">
   <style>
     /* V85 — approved Blueprint cover hero replacement */
     .bp-cover .cover-copy .foundation-logo{display:none!important}
@@ -90,7 +90,7 @@
     @media(max-width:760px){#prayer .care-route{grid-template-columns:1fr!important;gap:12px!important}#prayer .care-route i{margin:0 auto!important;transform:rotate(90deg)!important}#prayer .care-route>div{min-height:auto!important;padding:88px 26px 28px!important}#prayer .care-route span{max-width:360px!important}}
   </style>
 </head>
-<body data-blueprint-version="99">
+<body data-blueprint-version="100">
   <div class="bp-progress" aria-hidden="true"><span id="progressBar"></span></div>
   <button class="bp-menu" id="menuToggle" aria-label="Open blueprint navigation">☰</button>
 
@@ -620,17 +620,52 @@
 
     <section class="bp-slide bp-future" id="future" data-title="The Future">
       <div class="future-glow"></div>
-      <div class="slide-inner future-inner reveal">
-        <img class="future-propel" src="/demo-blueprint/assets/propel-logo-lightpage-approved.png" alt="Propel by Eagle Vision">
-        <img class="future-foundations" src="/demo-blueprint/assets/foundations/foundations-horizontal-transparent-approved.png" alt="Foundations Church">
+      <div class="slide-inner future-inner future-inner-v100 reveal">
+        <div class="future-brand-lockup-v100" role="img" aria-label="Propel by Eagle Vision">
+          <img class="future-propel-base-v100" src="/demo-blueprint/assets/propel-logo-header-transparent.png" alt="">
+          <img class="future-propel-color-v100" src="/demo-blueprint/assets/propel-logo-header-transparent.png" alt="" aria-hidden="true">
+        </div>
         <p class="eyebrow gold">THE FUTURE WE SEE</p>
         <h2>One ministry.<br><em>One mission.</em><br>Every person connected.</h2>
         <p class="future-copy">Helping churches welcome people well. Helping families belong. Helping volunteers serve with clarity. Helping partners see their impact. Helping leaders care for people without carrying the weight of disconnected technology.</p>
-        <div class="cta-row"><a class="btn gold-btn" href="/demo/">Build My Propel Plan <span>→</span></a><a class="btn ghost-btn" href="/demo/">Schedule My Propel Demo</a></div>
-        <small class="future-note">No pricing is shown in this self-guided Blueprint. Every Propel plan is shaped around the ministry after a conversation.</small>
+        <div class="cta-row future-cta-row-v100"><a class="btn gold-btn" href="#blueprint-next-step" data-next-step-intent="Ready to Move Forward">I'm Ready to Move Forward <span>→</span></a><a class="btn ghost-btn" href="#blueprint-next-step" data-next-step-intent="Free Q&amp;A / Strategy Session">Schedule a Free Q&amp;A / Strategy Session</a></div>
+        <small class="future-note future-note-v100">Choose the next step that fits where you are. The Q&amp;A / strategy session is free of charge. Prefer to talk now? <a href="tel:+18508124711">Call (850) 812-4711</a>.</small>
       </div><div class="slide-no">29 / 29</div>
     </section>
   </main>
+
+  <section class="bp-next-step-modal-v100" id="blueprint-next-step" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="blueprint-next-step-title">
+    <button class="next-step-backdrop-v100" type="button" data-next-step-close aria-label="Close next-step form"></button>
+    <div class="next-step-dialog-v100">
+      <button class="next-step-close-v100" type="button" data-next-step-close aria-label="Close next-step form">×</button>
+      <div class="next-step-intro-v100">
+        <img src="/demo-blueprint/assets/propel-logo-header-transparent.png" alt="Propel by Eagle Vision">
+        <p class="eyebrow gold">YOUR NEXT STEP</p>
+        <h2 id="blueprint-next-step-title">Let's move your ministry <em>forward.</em></h2>
+        <p>Tell us where you are ready to go next. We will personally follow up about getting your Propel build moving or scheduling a free Q&amp;A / strategy session.</p>
+        <div class="next-step-paths-v100"><span><b>01</b>Ready to get set up and rolling</span><span><b>02</b>Free questions and strategy conversation</span></div>
+        <a class="next-step-call-v100" href="tel:+18508124711"><small>CALL PROPEL DIRECTLY</small><strong>(850) 812-4711</strong></a>
+      </div>
+      <form class="next-step-form-v100" name="propel-blueprint-next-step" method="POST" data-netlify="true" netlify-honeypot="website" action="/demo-blueprint/thank-you/">
+        <input type="hidden" name="form-name" value="propel-blueprint-next-step">
+        <input type="hidden" name="source" value="Digital Ministry Blueprint V100">
+        <p class="next-step-honeypot-v100"><label>Do not fill this out: <input name="website"></label></p>
+        <div class="next-step-form-head-v100"><small>LET'S BEGIN</small><h3 data-next-step-heading>Tell us how you are ready to move forward.</h3><p data-next-step-helper>Share the best way to reach you and what you would like to launch first.</p></div>
+        <div class="next-step-fields-v100">
+          <label>YOUR NAME<input name="name" autocomplete="name" required></label>
+          <label>CHURCH OR MINISTRY<input name="ministry" autocomplete="organization" required></label>
+          <label>YOUR ROLE <span>OPTIONAL</span><input name="role" autocomplete="organization-title"></label>
+          <label>EMAIL ADDRESS<input type="email" name="email" autocomplete="email" required></label>
+          <label>PHONE NUMBER<input type="tel" name="phone" autocomplete="tel" required></label>
+          <label>BEST TIME TO REACH YOU<select name="best-time"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Anytime</option></select></label>
+          <label class="next-step-full-v100">DESIRED NEXT STEP<select name="next-step" id="nextStepIntentV100" required><option value="Ready to Move Forward">I'm Ready to Move Forward</option><option value="Free Q&A / Strategy Session">Free Q&amp;A / Strategy Session</option></select></label>
+          <label class="next-step-full-v100">WHAT WOULD YOU LIKE PROPEL TO HELP YOU LAUNCH?<textarea name="priority" rows="3" placeholder="Website, app, giving, partner platform, engagement, operations, or another priority"></textarea></label>
+        </div>
+        <button type="submit">Submit My Next Step <span>→</span></button>
+        <small class="next-step-privacy-v100">Your information will only be used to respond to this request.</small>
+      </form>
+    </div>
+  </section>
 
   <footer class="bp-site-footer">
     <div class="bp-footer-container">
@@ -648,6 +683,6 @@
         <div class="bp-footer-contact"><a href="mailto:info@kingdompropel.com">info@kingdompropel.com</a><span>105 Lewis St Unit 103 Suite 315, Fort Walton Beach, FL 32547</span></div>
       </div>
     </div>
-  </footer><script src="/demo-blueprint/blueprint.js?v=62"></script>
+  </footer><script src="/demo-blueprint/blueprint.js?v=100"></script>
 </body>
 </html>
