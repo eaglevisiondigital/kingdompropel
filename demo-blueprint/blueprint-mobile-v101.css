@@ -1,4 +1,4 @@
-/* V101 — Blueprint only. Retains approved content/assets and V100 lead capture.
+/* V102 — Blueprint only. Retains approved content/assets and V100 lead capture.
    Loaded last because earlier releases include inline and !important rules.
    Shared contrast repairs apply at every width; layout changes are responsive. */
 .bp-main {
@@ -89,9 +89,12 @@
   .bp-main #ecosystem .eco-chip-grid-v51 small { color: #57534d !important; font-size: 14px !important; line-height: 1.5 !important; }
   .bp-main #ecosystem .eco-group-title-v51 b { font-size: 21px !important; line-height: 1.2 !important; }
   .bp-main #ecosystem .eco-group-title-v51 small { font-size: 14px !important; line-height: 1.5 !important; }
-  .bp-main #ecosystem .eco-core-v51 { width: 210px !important; height: 210px !important; }
-  .bp-main #ecosystem .eco-core-v51 small { font-size: 11px !important; }
-  .bp-main #ecosystem .eco-core-v51>span:not(.eco-core-rings-v51) { font-size: 12px !important; }
+  /* Keep the entire label stack inside the circle's narrower lower chord. */
+  .bp-main #ecosystem .eco-core-v51 { display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; gap: 4px !important; width: min(13.75rem,100%) !important; height: auto !important; aspect-ratio: 1; padding: 0 !important; }
+  .bp-main #ecosystem .eco-core-v51 img { flex: 0 0 auto; width: 3.5rem !important; height: 3.5rem !important; margin: 0 0 4px !important; }
+  .bp-main #ecosystem .eco-core-v51>b { max-width: 72%; margin: 0 !important; font-size: 1.25rem !important; line-height: 1.2 !important; letter-spacing: .04em !important; }
+  .bp-main #ecosystem .eco-core-v51 small { display: block !important; flex: 0 0 auto; width: 62% !important; max-width: 8.5rem !important; margin: 4px 0 0 !important; font-size: .75rem !important; line-height: 1.35 !important; letter-spacing: .06em !important; white-space: normal !important; text-wrap: balance; text-align: center !important; }
+  .bp-main #ecosystem .eco-core-v51>span:not(.eco-core-rings-v51) { max-width: 72%; margin: 0 !important; font-size: .75rem !important; line-height: 1.4 !important; letter-spacing: .1em !important; white-space: normal !important; text-align: center; }
   .bp-main #ecosystem .eco-journey-v51 :is(b,small) { font-size: 13px !important; line-height: 1.45 !important; }
   .bp-main #ecosystem .ecosystem-pillars-v48 :is(small,span) { font-size: 14px !important; line-height: 1.5 !important; }
   .bp-main #ecosystem .ecosystem-pillars-v48 strong { font-size: 20px !important; }
@@ -99,9 +102,11 @@
   .bp-main :is(#mobile,#groups,#courses) .feature-list { grid-template-columns: 1fr !important; gap: 10px !important; }
   .bp-main :is(#mobile,#groups,#courses) .feature-list>span { padding: 17px 18px !important; min-height: 56px !important; font-size: 16px !important; line-height: 1.4 !important; color: #211c16 !important; background: #fffaf1 !important; border-color: #c9ac80 !important; border-left-width: 4px !important; }
   .bp-main #website .website-quote-card p { font-size: 16px !important; line-height: 1.6 !important; color: #57534d !important; }
-  .bp-main #app .app-value-v60 article { background: #18352d !important; border-color: #9f8358 !important; }
-  .bp-main #app .app-value-v60 b { color: #edc787 !important; font-size: 13px !important; }
-  .bp-main #app .app-value-v60 span { color: #fff4df !important; font-size: 16px !important; line-height: 1.5 !important; }
+  .bp-main #app .app-copy-v60 h3 { font-size: clamp(1.75rem,7.2vw,2.25rem) !important; line-height: 1.15 !important; text-wrap: balance; margin-bottom: 18px !important; }
+  .bp-main #app .app-value-v60 { gap: 12px !important; margin-top: 24px !important; }
+  .bp-main #app .app-value-v60 article { display: grid !important; gap: 8px !important; padding: 20px !important; min-width: 0 !important; background: #18352d !important; border: 1px solid #9f8358 !important; border-radius: 16px !important; }
+  .bp-main #app .app-value-v60 b { margin: 0 !important; color: #edc787 !important; font-size: 14px !important; line-height: 1.4 !important; }
+  .bp-main #app .app-value-v60 span { margin: 0 !important; color: #fff4df !important; font-size: 16px !important; line-height: 1.55 !important; }
   .bp-main #giving .donor-engagement-v61 { padding: 24px 20px !important; }
   .bp-main #giving .donor-intro-v61>b { font-size: 14px !important; }
   .bp-main #giving .donor-intro-v61>span { font-size: 17px !important; line-height: 1.6 !important; }
@@ -153,7 +158,9 @@
   .bp-main #serving :is(.board-note,.coverage span,.team-row,.board-top small) { font-size: 14px !important; line-height: 1.5 !important; }
   .bp-main #serving .pathway-card { min-height: 0 !important; padding: 20px !important; }
   .bp-main #serving .pathway-card p { font-size: 15px !important; line-height: 1.5 !important; }
-  .bp-main #kids .feature-list>span { font-size: 16px !important; line-height: 1.4 !important; min-height: 70px !important; padding: 18px 16px !important; }
+  /* Normal-flow icons reserve their own space, including when text wraps. */
+  .bp-main #kids .feature-list.compact>span { display: flex !important; align-items: center !important; gap: 14px !important; min-width: 0 !important; font-size: 16px !important; line-height: 1.45 !important; min-height: 74px !important; padding: 18px !important; }
+  .bp-main #kids .feature-list.compact>span::before { position: static !important; inset: auto !important; transform: none !important; flex: 0 0 30px !important; width: 30px !important; height: 30px !important; margin: 0 !important; font-size: 14px !important; line-height: 1 !important; }
   .bp-main #kids .checkin-panel { padding: 24px 20px !important; }
   .bp-main #kids .checkin-head { flex-wrap: wrap !important; gap: 16px !important; }
   .bp-main #kids .checkin-head img { width: min(260px,100%) !important; max-width: 100% !important; height: auto !important; object-fit: contain !important; }
@@ -207,8 +214,8 @@
   .bp-main #workflows :is(.flow-node,.flow-stack>div) small { font-size: 13px !important; }
   .bp-main #workflows :is(.flow-node,.flow-stack>div) b { font-size: 21px !important; line-height: 1.35 !important; }
   .bp-main #workflows :is(.flow-node,.flow-stack>div) span { font-size: 16px !important; line-height: 1.5 !important; color: #57534d !important; }
-  .bp-main #workflows .workflow-examples { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 10px !important; }
-  .bp-main #workflows .workflow-examples span { font-size: 15px !important; padding: 14px !important; line-height: 1.4 !important; text-align: center; }
+  .bp-main #workflows .workflow-examples { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; grid-auto-rows: 1fr !important; align-items: stretch !important; gap: 12px !important; }
+  .bp-main #workflows .workflow-examples span { display: flex !important; align-items: center !important; justify-content: center !important; min-width: 0 !important; min-height: 4.75rem !important; font-size: 16px !important; padding: 16px 14px !important; line-height: 1.4 !important; text-align: center !important; text-wrap: balance; border-radius: 18px !important; }
 
   /* Physical-to-digital: each approved element gets its own unclipped space. */
   .bp-main #connect .physical-scene { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 24px !important; min-height: 0 !important; height: auto !important; transform: none !important; }
@@ -232,7 +239,8 @@
   .bp-main #ai .ask-intro p { font-size: 16px !important; line-height: 1.5 !important; }
   .bp-main #ai .ai-console>button { font-size: 16px !important; line-height: 1.45 !important; min-height: 56px !important; padding: 16px !important; }
   .bp-main #ai .ask-box { font-size: 16px !important; min-height: 56px !important; }
-  .bp-main #ai .premium-tags span { font-size: 14px !important; line-height: 1.5 !important; }
+  .bp-main #ai .premium-tags { display: grid !important; grid-template-columns: minmax(0,1fr) !important; grid-auto-rows: 1fr !important; align-items: stretch !important; gap: 10px !important; width: 100% !important; max-width: 35rem !important; }
+  .bp-main #ai .premium-tags span { display: flex !important; align-items: center !important; width: 100% !important; min-width: 0 !important; min-height: 3.5rem !important; margin: 0 !important; padding: 15px 18px !important; font-size: 16px !important; line-height: 1.45 !important; border-radius: 14px !important; text-align: left !important; }
 
   .bp-main #difference .difference-premium-cards { gap: 16px !important; }
   .bp-main #difference .difference-premium-cards article { min-height: 0 !important; height: auto !important; padding: 26px 24px !important; }
@@ -273,6 +281,7 @@
   .bp-main #ecosystem :is(.eco-architecture-v51,.eco-system-group-v51) { padding: 12px !important; }
   .bp-main #events .event-console-v99 { grid-template-columns: 1fr !important; }
   .bp-main #workflows .workflow-examples { grid-template-columns: 1fr !important; }
+  .bp-main #workflows .workflow-examples span { min-height: 3.5rem !important; }
 }
 @media (prefers-reduced-motion: reduce) {
   .bp-main .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }

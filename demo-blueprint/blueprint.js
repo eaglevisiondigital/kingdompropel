@@ -46,7 +46,7 @@
 })();
 
 // V57 deployment marker — makes it easy to verify the catch-up package is live.
-window.PROPEL_BLUEPRINT_VERSION = '101-mobile-readability-and-layout';
+window.PROPEL_BLUEPRINT_VERSION = '102-mobile-containment-and-balance';
 
 // V60 — Blueprint closing savings calculator. Same approved math/tiering as the Propel giving calculators.
 (() => {
