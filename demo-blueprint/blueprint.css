@@ -1153,7 +1153,7 @@ body[data-blueprint-version="57"]{--v57:1}
   display:grid;
   grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr) 38px minmax(0,1fr) 38px minmax(0,1fr) 38px minmax(0,1fr);
   gap:8px;
-  align-items:center;
+  align-items:stretch;
   width:100%;
   margin:0;
 }
@@ -1196,6 +1196,7 @@ body[data-blueprint-version="57"]{--v57:1}
   width:38px;
   height:38px;
   justify-self:center;
+  align-self:center;
   border:1px solid rgba(221,174,104,.8);
   border-radius:50%;
   color:#e1b36b;
