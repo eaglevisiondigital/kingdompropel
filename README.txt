@@ -1,18 +1,16 @@
-PROPEL DIGITAL MINISTRY BLUEPRINT — DREAM TEAM FLOW REPLACEMENT
+PROPEL DREAM TEAM FLOW — FINAL REPLACEMENT
 
-Replace the CURRENT distorted five-step graphic with:
-dream-team-flow-replacement-final.png
+USE THIS FILE:
+dream-team-flow-FINAL.png
 
-This is the intended layout:
-1. Interest
-2. Apply
-3. Onboard
-4. Schedule
-5. Serve
+This is the exact corrected visual approved in the reference mockup:
+Interest → Apply → Onboard → Schedule → Serve
 
 IMPORTANT:
-- Use this image itself as the replacement asset.
-- Do NOT reconstruct the five cards with HTML/CSS.
-- Do NOT reuse the old distorted graphic.
-- Keep the replacement proportional (width: 100%; height: auto; object-fit: contain).
-- Do not crop it.
+- Replace the old distorted flow image completely.
+- Do not rebuild the cards in HTML/CSS.
+- Do not crop or stretch the image.
+- Display at width: 100%; height: auto; object-fit: contain.
+- Preserve the full 2048 × 682 aspect ratio.
+
+A high-quality WEBP version is also included for web use.
