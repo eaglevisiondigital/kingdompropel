@@ -1,10 +1,18 @@
-PROPEL BLUEPRINT — THREE CORRECTED LAYOUT ASSETS
+PROPEL DIGITAL MINISTRY BLUEPRINT — DREAM TEAM FLOW REPLACEMENT
 
-1. events-section-aesthetic-fix.png
-   Polished event feature grid with improved hierarchy, icons, spacing and card aesthetics.
+Replace the CURRENT distorted five-step graphic with:
+dream-team-flow-replacement-final.png
 
-2. website-connect-quote-fixed.png
-   Full quote visible with balanced margins and premium editorial treatment.
+This is the intended layout:
+1. Interest
+2. Apply
+3. Onboard
+4. Schedule
+5. Serve
 
-3. dream-team-flow-fixed.png
-   Rebuilt Interest → Apply → Onboard → Schedule → Serve flow with evenly spaced cards and arrows.
+IMPORTANT:
+- Use this image itself as the replacement asset.
+- Do NOT reconstruct the five cards with HTML/CSS.
+- Do NOT reuse the old distorted graphic.
+- Keep the replacement proportional (width: 100%; height: auto; object-fit: contain).
+- Do not crop it.
