@@ -1,5 +1,10 @@
-PROPEL BLUEPRINT LAYOUT FIXES
+PROPEL BLUEPRINT — THREE CORRECTED LAYOUT ASSETS
 
-website-connect-quote-fixed.png — corrected quote section with full text visible and refined spacing.
-dream-team-flow-fixed.png — corrected Interest → Apply → Onboard → Schedule → Serve layout.
-combined-preview-fixed.png — full preview showing both corrected treatments together.
+1. events-section-aesthetic-fix.png
+   Polished event feature grid with improved hierarchy, icons, spacing and card aesthetics.
+
+2. website-connect-quote-fixed.png
+   Full quote visible with balanced margins and premium editorial treatment.
+
+3. dream-team-flow-fixed.png
+   Rebuilt Interest → Apply → Onboard → Schedule → Serve flow with evenly spaced cards and arrows.
